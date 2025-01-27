@@ -3,6 +3,7 @@ package server
 import (
 	"Restringing-V2/entity"
 	"net/http"
+	"strconv"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -29,6 +30,8 @@ func (s *Server) RegisterRoutes() http.Handler {
 	r.GET("/health", s.healthHandler)
 
 	r.POST("/create-user", s.handleUserCreation)
+
+	r.GET("/get-user-by-id/:id", s.handleGetUserById)
 
 	return r
 }
@@ -63,4 +66,20 @@ func (s *Server) handleUserCreation(c *gin.Context) {
 	}
 
 	c.Status(http.StatusOK)
+}
+
+func (s *Server) handleGetUserById(c *gin.Context) {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+
+	user, err := s.db.GetUserById(id)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, user)
 }

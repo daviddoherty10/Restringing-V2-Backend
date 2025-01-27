@@ -20,6 +20,9 @@ type Service interface {
 	// Creates a User
 	CreateUser(u entity.User) error
 
+	//Gets a user by id
+	GetUserById(id int) (entity.User, error)
+
 	// Health returns a map of health status information.
 	// The keys and values in the map are service-specific.
 	Health() map[string]string
@@ -34,7 +37,7 @@ type service struct {
 }
 
 var (
-	dburl      = os.Getenv("BLUEPRINT_DB_URL")
+	dburl      = os.Getenv("DB_URL")
 	dbInstance *service
 )
 
@@ -119,7 +122,7 @@ func (s *service) Close() error {
 
 func (s *service) CreateUser(u entity.User) error {
 	// Define the SQL INSERT query
-	query := `INSERT INTO users (firstname, surname, email, created_at, createdAt) VALUES (?, ?, ?,?,?)`
+	query := `INSERT INTO users (firstname, surname, email, created_at, updated_at) VALUES (?, ?, ?,?,?)`
 
 	// Execute the query with the provided parameters
 	_, err := s.db.Exec(query, u.FirstName, u.Surname, u.Email, time.Now(), time.Now())
@@ -129,4 +132,23 @@ func (s *service) CreateUser(u entity.User) error {
 
 	log.Printf("User created successfully: Name=%s, Email=%s", u.FirstName, u.Email)
 	return nil
+}
+
+func (s *service) GetUserById(id int) (entity.User, error) {
+	query := `SELECT * FROM users WHERE id = ?`
+	var user entity.User
+
+	// Execute the query
+	row := s.db.QueryRow(query, id)
+
+	// Scan the result into the user struct
+	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Email, &user.CreatedAt, &user.UpdatedAt)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return user, fmt.Errorf("user with id %d not found", id)
+		}
+		return user, fmt.Errorf("failed to get user: %v", err)
+	}
+
+	return user, nil
 }
