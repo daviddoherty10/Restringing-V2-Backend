@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/joho/godotenv/autoload"
 
-	"Restring-V2/internal/database"
+	"Restringing-V2/internal/database"
 )
 
 type Server struct {
@@ -22,8 +22,7 @@ func NewServer() *http.Server {
 	port, _ := strconv.Atoi(os.Getenv("PORT"))
 	NewServer := &Server{
 		port: port,
-
-		db: database.New(),
+		db:   database.New(),
 	}
 
 	// Declare Server config

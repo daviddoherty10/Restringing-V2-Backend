@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"Restring-V2/internal/server"
+	"Restringing-V2/internal/server"
 )
 
 func gracefulShutdown(apiServer *http.Server, done chan bool) {

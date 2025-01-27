@@ -1,4 +1,4 @@
-module Restring-V2
+module Restringing-V2
 
 go 1.23.5
 
