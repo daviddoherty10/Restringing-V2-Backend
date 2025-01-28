@@ -1,9 +1,10 @@
 package server
 
 import (
-	"Restringing-V2/entity"
+	"Restringing-V2/controllers"
+	"Restringing-V2/middlewares"
+	"Restringing-V2/service/user"
 	"net/http"
-	"strconv"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -25,61 +26,38 @@ func (s *Server) RegisterRoutes() http.Handler {
 		AllowCredentials: true, // Enable cookies/auth
 	}))
 
-	r.GET("/", s.HelloWorldHandler)
+	v1Router := r.Group("/api/v1")
+	{
+		userRouter := v1Router.Group("/user")
+		{
+			userRouter.POST("/create-user", func(ctx *gin.Context) {
+				user.HandleUserCreation(s.db, ctx)
+			})
 
-	r.GET("/health", s.healthHandler)
-
-	r.POST("/create-user", s.handleUserCreation)
-
-	r.GET("/get-user-by-id/:id", s.handleGetUserById)
+			userRouter.GET("/get-user-by-id/:id", func(ctx *gin.Context) {
+				user.HandleGetUserById(s.db, ctx)
+			})
+		}
+		orderRouter := v1Router.Group("order")
+		{
+			orderRouter.GET("/get-order", func(ctx *gin.Context) {
+				ctx.JSON(http.StatusOK, gin.H{"order": "No orders"})
+			})
+		}
+		auth := r.Group("/auth")
+		{
+			auth.POST("/login", func(ctx *gin.Context) {
+				controllers.Login(ctx, s.db)
+			})
+		}
+		protected := r.Group("/protected")
+		protected.Use(middlewares.AuthMiddleware())
+		{
+			protected.GET("/data", func(c *gin.Context) {
+				c.JSON(200, gin.H{"message": "You have access to protected data!"})
+			})
+		}
+	}
 
 	return r
-}
-
-func (s *Server) HelloWorldHandler(c *gin.Context) {
-	resp := make(map[string]string)
-	resp["message"] = "Hello World"
-
-	c.JSON(http.StatusOK, resp)
-}
-
-func (s *Server) healthHandler(c *gin.Context) {
-	c.JSON(http.StatusOK, s.db.Health())
-}
-
-func (s *Server) handleUserCreation(c *gin.Context) {
-	var requestBody UserRequestBody
-
-	if err := c.ShouldBindJSON(&requestBody); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-		return
-	}
-
-	var user entity.User
-	user.FirstName = requestBody.Firstname
-	user.Surname = requestBody.Surname
-	user.Email = requestBody.Email
-
-	if err := s.db.CreateUser(user); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-		return
-	}
-
-	c.Status(http.StatusOK)
-}
-
-func (s *Server) handleGetUserById(c *gin.Context) {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
-		return
-	}
-
-	user, err := s.db.GetUserById(id)
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
-		return
-	}
-
-	c.JSON(http.StatusOK, user)
 }
