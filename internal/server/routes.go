@@ -30,31 +30,37 @@ func (s *Server) RegisterRoutes() http.Handler {
 	{
 		userRouter := v1Router.Group("/user")
 		{
-			userRouter.POST("/create-user", func(ctx *gin.Context) {
-				user.HandleUserCreation(s.db, ctx)
-			})
-
 			userRouter.GET("/get-user-by-id/:id", func(ctx *gin.Context) {
 				user.HandleGetUserById(s.db, ctx)
 			})
 		}
-		orderRouter := v1Router.Group("order")
+
+		orderRouter := v1Router.Group("/order") // ✅ Added missing '/'
 		{
 			orderRouter.GET("/get-order", func(ctx *gin.Context) {
 				ctx.JSON(http.StatusOK, gin.H{"order": "No orders"})
 			})
 		}
-		auth := r.Group("/auth")
+
+		// ✅ Corrected: auth is now inside v1Router
+		auth := v1Router.Group("/auth")
 		{
+			auth.POST("/create-user", func(ctx *gin.Context) { // ✅ Moved from userRouter
+				controllers.CreateAccount(ctx, s.db)
+			})
 			auth.POST("/login", func(ctx *gin.Context) {
 				controllers.Login(ctx, s.db)
 			})
+			auth.DELETE("/delete", func(ctx *gin.Context) {
+				controllers.RequestAccountDeletion(ctx, s.db)
+			})
 		}
-		protected := r.Group("/protected")
+
+		protected := v1Router.Group("/protected")
 		protected.Use(middlewares.AuthMiddleware())
 		{
 			protected.GET("/data", func(c *gin.Context) {
-				c.JSON(200, gin.H{"message": "You have access to protected data!"})
+				c.JSON(http.StatusOK, gin.H{"message": "You have access to protected data!"})
 			})
 		}
 	}

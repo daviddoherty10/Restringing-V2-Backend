@@ -20,10 +20,14 @@ type Service interface {
 	// Creates a User
 	CreateUser(u entity.User) error
 
+	DeleteUser(id uint) error
+
 	//Gets a user by id
 	GetUserById(id int) (entity.User, error)
 
 	GetUserByUsername(username string) (entity.User, error)
+
+	GetUserByEmail(email string) (entity.User, error)
 	// Health returns a map of health status information.
 	// The keys and values in the map are service-specific.
 	Health() map[string]string

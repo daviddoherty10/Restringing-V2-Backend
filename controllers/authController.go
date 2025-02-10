@@ -4,7 +4,6 @@ import (
 	"Restringing-V2/entity"
 	"Restringing-V2/internal/database"
 	"Restringing-V2/utils"
-	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -19,9 +18,13 @@ type UserRequestBody struct {
 	Password  string `json:"password" binding:"required"`
 }
 
+type IdRequestBody struct {
+	Id uint `json:"id" binding:"required"`
+}
+
 func Login(c *gin.Context, db database.Service) {
 	var credentials struct {
-		Username string `json:"username"`
+		Email    string `json:"email"`
 		Password string `json:"password"`
 	}
 
@@ -30,9 +33,7 @@ func Login(c *gin.Context, db database.Service) {
 		return
 	}
 
-	user, err := db.GetUserByUsername(credentials.Username)
-	log.Println(credentials.Password)
-	log.Println(credentials.Username)
+	user, err := db.GetUserByEmail(credentials.Email)
 
 	if err != nil {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": err.Error()})
@@ -45,12 +46,6 @@ func Login(c *gin.Context, db database.Service) {
 		return
 	}
 
-	/*if user.Password != credentials.Password {
-		c.JSON(http.StatusUnauthorized, gin.H{"error": "Hello"})
-		log.Println(user.Password + "  " + credentials.Password)
-		return
-	}*/
-
 	// Generate token
 	token, err := utils.GenerateToken(uint(user.ID))
 	if err != nil {
@@ -58,33 +53,70 @@ func Login(c *gin.Context, db database.Service) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"token": token})
+	c.SetCookie("auth_token", token, 3600, "/", "localhost", false, true) // 1-hour expiry
+	c.Status(http.StatusOK)
 }
 
 func CreateAccount(c *gin.Context, db database.Service) {
 	var requestBody UserRequestBody
 
+	// Parse JSON request
 	if err := c.ShouldBindJSON(&requestBody); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Line 23: " + err.Error()})
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request: " + err.Error()})
 		return
 	}
 
+	// Create User struct
 	var user entity.User
 	user.FirstName = requestBody.Firstname
 	user.Surname = requestBody.Surname
 	user.Username = requestBody.Username
 	user.Email = requestBody.Email
+
+	// Hash password
 	var err error
 	user.Password, err = utils.HashPassword(requestBody.Password)
 	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Problem with password"})
-	}
-
-	if err := db.CreateUser(user); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Line 25: " + err.Error()})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Problem with password encryption"})
 		return
 	}
 
-	c.Status(http.StatusOK)
+	// Save user to DB
+	if err := db.CreateUser(user); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Database error: " + err.Error()})
+		return
+	}
+
+	// ✅ Always return JSON on success
+	c.JSON(http.StatusOK, gin.H{
+		"status":  200,
+		"message": "User created successfully",
+	})
+}
+
+func RequestAccountDeletion(c *gin.Context, db database.Service) {
+	token := c.GetHeader("Authorization")
+	isValid, err := utils.ValidateToken(token)
+	if err != nil || isValid.Valid == false {
+		c.Status(http.StatusUnauthorized)
+		c.Abort()
+		return
+	}
+
+	var idFromJson IdRequestBody
+
+	if err := c.ShouldBindJSON(&idFromJson); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Could not bind Json"})
+		return
+	}
+
+	if err := db.DeleteUser(idFromJson.Id); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Unable to delete user from Database"})
+	}
 
 }
+
+/*func Logout(c *gin.Context, db database.Service) {
+	token := c.GetHeader("Authorization")
+
+}*/
