@@ -40,21 +40,24 @@ func Login(c *gin.Context, db database.Service) {
 		return
 	}
 
-	// Check credentials
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(credentials.Password)); err != nil {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Line 44" + err.Error()})
 		return
 	}
 
-	// Generate token
 	token, err := utils.GenerateToken(uint(user.ID))
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate token"})
 		return
 	}
 
-	c.SetCookie("auth_token", token, 3600, "/", "localhost", false, true) // 1-hour expiry
-	c.Status(http.StatusOK)
+	c.SetCookie("auth_token", token, 3600, "/", "", false, true) // 1-hour expiry
+	c.JSON(http.StatusOK, gin.H{
+		"status":  200,
+		"message": "Login successful",
+		"token":   token,
+	})
+
 }
 
 func CreateAccount(c *gin.Context, db database.Service) {

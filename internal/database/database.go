@@ -32,6 +32,9 @@ type Service interface {
 	// The keys and values in the map are service-specific.
 	Health() map[string]string
 
+	//Used to create an application to be listed on the website
+	CreatePotenialStringer(p entity.PotentialStringer) error
+
 	// Close terminates the database connection.
 	// It returns an error if the connection cannot be closed.
 	Close() error

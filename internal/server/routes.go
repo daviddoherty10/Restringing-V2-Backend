@@ -35,13 +35,6 @@ func (s *Server) RegisterRoutes() http.Handler {
 			})
 		}
 
-		orderRouter := v1Router.Group("/order") // ✅ Added missing '/'
-		{
-			orderRouter.GET("/get-order", func(ctx *gin.Context) {
-				ctx.JSON(http.StatusOK, gin.H{"order": "No orders"})
-			})
-		}
-
 		// ✅ Corrected: auth is now inside v1Router
 		auth := v1Router.Group("/auth")
 		{
@@ -51,9 +44,6 @@ func (s *Server) RegisterRoutes() http.Handler {
 			auth.POST("/login", func(ctx *gin.Context) {
 				controllers.Login(ctx, s.db)
 			})
-			auth.DELETE("/delete", func(ctx *gin.Context) {
-				controllers.RequestAccountDeletion(ctx, s.db)
-			})
 		}
 
 		protected := v1Router.Group("/protected")
@@ -61,6 +51,12 @@ func (s *Server) RegisterRoutes() http.Handler {
 		{
 			protected.GET("/data", func(c *gin.Context) {
 				c.JSON(http.StatusOK, gin.H{"message": "You have access to protected data!"})
+			})
+			protected.DELETE("/delete-user", func(ctx *gin.Context) {
+				controllers.RequestAccountDeletion(ctx, s.db)
+			})
+			protected.POST("/create-potenial-stringer", func(ctx *gin.Context) {
+				controllers.CreateApplication(ctx, s.db)
 			})
 		}
 	}
