@@ -3,7 +3,6 @@ package server
 import (
 	"Restringing-V2/controllers"
 	"Restringing-V2/middlewares"
-	"Restringing-V2/service/user"
 	"net/http"
 
 	"github.com/gin-contrib/cors"
@@ -31,7 +30,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 		userRouter := v1Router.Group("/user")
 		{
 			userRouter.GET("/get-user-by-id/:id", func(ctx *gin.Context) {
-				user.HandleGetUserById(s.db, ctx)
+				controllers.HandleGetUserById(s.db, ctx)
 			})
 		}
 

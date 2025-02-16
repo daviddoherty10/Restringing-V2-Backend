@@ -11,8 +11,8 @@ type User struct {
 	Username          string
 	Email             string
 	EmailVerification bool
-	Password          string
 	HasAcceptedTerms  bool
+	Password          string
 	CreatedAt         time.Time
 	UpdatedAt         time.Time
 }
@@ -25,8 +25,8 @@ var MockUser = User{
 	Username:          "testuser",
 	Email:             "test@testmail.com",
 	EmailVerification: true,
-	Password:          "password", // NEVER store plain-text passwords in production!
 	HasAcceptedTerms:  true,
+	Password:          "password", // NEVER store plain-text passwords in production!
 	CreatedAt:         time.Now(),
 	UpdatedAt:         time.Now(),
 }

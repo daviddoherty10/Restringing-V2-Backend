@@ -4,6 +4,7 @@ import (
 	"Restringing-V2/entity"
 	"Restringing-V2/internal/database"
 	"Restringing-V2/utils"
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -11,11 +12,12 @@ import (
 )
 
 type UserRequestBody struct {
-	Firstname string `json:"firstname" binding:"required"`
-	Surname   string `json:"surname" binding:"required"`
-	Email     string `json:"email" binding:"required"`
-	Username  string `json:"username" binding:"required"`
-	Password  string `json:"password" binding:"required"`
+	Firstname        string `json:"firstname" binding:"required"`
+	Surname          string `json:"surname" binding:"required"`
+	Email            string `json:"email" binding:"required"`
+	Username         string `json:"username" binding:"required"`
+	Password         string `json:"password" binding:"required"`
+	HasAcceptedTerms bool   `json:"has_accepted_terms" binding:"required"`
 }
 
 type IdRequestBody struct {
@@ -29,24 +31,27 @@ func Login(c *gin.Context, db database.Service) {
 	}
 
 	if err := c.ShouldBindJSON(&credentials); err != nil {
+		log.Println("Failed to Bind Json on Login: " + err.Error())
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
 		return
 	}
 
 	user, err := db.GetUserByEmail(credentials.Email)
-
 	if err != nil {
+		log.Println("Failed to Get User Data on Login: " + err.Error())
 		c.JSON(http.StatusUnauthorized, gin.H{"error": err.Error()})
 		return
 	}
 
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(credentials.Password)); err != nil {
+		log.Println("Failed to Compare Hash and Password on Login: " + err.Error())
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Line 44" + err.Error()})
 		return
 	}
 
 	token, err := utils.GenerateToken(uint(user.ID))
 	if err != nil {
+		log.Println("Failed to Generate a token on Login: " + err.Error())
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate token"})
 		return
 	}
@@ -65,6 +70,7 @@ func CreateAccount(c *gin.Context, db database.Service) {
 
 	// Parse JSON request
 	if err := c.ShouldBindJSON(&requestBody); err != nil {
+		log.Println("Failed to Bind Json on account Creation: " + err.Error())
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request: " + err.Error()})
 		return
 	}
@@ -75,17 +81,21 @@ func CreateAccount(c *gin.Context, db database.Service) {
 	user.Surname = requestBody.Surname
 	user.Username = requestBody.Username
 	user.Email = requestBody.Email
+	user.HasAcceptedTerms = requestBody.HasAcceptedTerms
+	user.EmailVerification = false
 
 	// Hash password
 	var err error
 	user.Password, err = utils.HashPassword(requestBody.Password)
 	if err != nil {
+		log.Println("Failed to Hash Password on account Creation: " + err.Error())
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Problem with password encryption"})
 		return
 	}
 
 	// Save user to DB
 	if err := db.CreateUser(user); err != nil {
+		log.Println("Failed to save user data on account Creation: " + err.Error())
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Database error: " + err.Error()})
 		return
 	}

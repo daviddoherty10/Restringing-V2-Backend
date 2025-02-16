@@ -12,10 +12,10 @@ import (
 
 func (s *service) CreateUser(u entity.User) error {
 	// Define the SQL INSERT query
-	query := `INSERT INTO users (firstname, surname, username, password, email, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)`
+	query := `INSERT INTO users (firstname, surname, username, email, email_confirmed, has_accepted_terms, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
 
 	// Execute the query with the provided parameters
-	_, err := s.db.Exec(query, u.FirstName, u.Surname, u.Username, u.Password, u.Email, time.Now(), time.Now())
+	_, err := s.db.Exec(query, u.FirstName, u.Surname, u.Username, u.Email, u.EmailVerification, u.HasAcceptedTerms, u.Password, time.Now(), time.Now())
 	if err != nil {
 		return fmt.Errorf("failed to insert user: %w", err)
 	}

@@ -1,4 +1,4 @@
-package user
+package controllers
 
 import (
 	"Restringing-V2/internal/database"

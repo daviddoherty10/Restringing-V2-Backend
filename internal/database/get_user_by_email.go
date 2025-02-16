@@ -18,7 +18,7 @@ func (s *service) GetUserByEmail(email string) (entity.User, error) {
 	row := s.db.QueryRow(query, email)
 
 	// Scan the result into the user struct
-	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.Password /*, &user.EmailVerification, &user.HasAcceptedTerms*/, &user.CreatedAt, &user.UpdatedAt)
+	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.EmailVerification, &user.HasAcceptedTerms, &user.Password, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return user, fmt.Errorf("user with id %d not found", email)
