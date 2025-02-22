@@ -19,19 +19,17 @@ func AuthMiddleware() gin.HandlerFunc {
 			authHeader := c.GetHeader("Authorization")
 			if authHeader == "" || !strings.HasPrefix(authHeader, "Bearer ") {
 				c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - missing token"})
+				log.Println("Unauthorized - missing token")
 				c.Abort()
 				return
 			}
 			tokenString = strings.TrimPrefix(authHeader, "Bearer ")
 		}
 
-		// Debugging: Print the token string to check if it's retrieved correctly
-		log.Println("Token received:", tokenString)
-
-		// Validate the token
 		token, err := utils.ValidateToken(tokenString)
 		if err != nil || !token.Valid {
 			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+			log.Println("Unauthorized - Invalid token")
 			c.Abort()
 			return
 		}
@@ -39,6 +37,7 @@ func AuthMiddleware() gin.HandlerFunc {
 		claims, ok := token.Claims.(jwt.MapClaims)
 		if !ok || !token.Valid {
 			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token claims"})
+			log.Println("Unauthorized - Invalid claims")
 			c.Abort()
 			return
 		}
@@ -50,7 +49,7 @@ func AuthMiddleware() gin.HandlerFunc {
 			return
 		}
 
-		userID := uint(userIDFloat) // Safer conversion
+		userID := uint(userIDFloat)
 		c.Set("user_id", userID)
 		c.Next()
 	}

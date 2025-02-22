@@ -1,0 +1,4 @@
+2025/02/22 19:49:46 logger.go:22: Logger initialized
+2025/02/22 19:49:54 auth_middleware.go:29: Token received: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAzNDAxOTQsInVzZXJfaWQiOjF9.16o6yP1c6EJ2bFjl3HUfWjjyYBjOX6cVFlonXwZGWaI
+2025/02/22 19:55:34 auth_middleware.go:29: Token received: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAzNDAxOTQsInVzZXJfaWQiOjF9.16o6yP1c6EJ2bFjl3HUfWjjyYBjOX6cVFlonXwZGWaI
+2025/02/22 19:55:34 auth_controller.go:140: 1
