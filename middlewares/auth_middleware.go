@@ -1,12 +1,13 @@
 package middlewares
 
 import (
-	"fmt"
+	"Restringing-V2/utils"
+	"log"
 	"net/http"
 	"strings"
 
-	"Restringing-V2/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt/v4"
 )
 
 func AuthMiddleware() gin.HandlerFunc {
@@ -25,7 +26,7 @@ func AuthMiddleware() gin.HandlerFunc {
 		}
 
 		// Debugging: Print the token string to check if it's retrieved correctly
-		fmt.Println("Token received:", tokenString)
+		log.Println("Token received:", tokenString)
 
 		// Validate the token
 		token, err := utils.ValidateToken(tokenString)
@@ -35,6 +36,22 @@ func AuthMiddleware() gin.HandlerFunc {
 			return
 		}
 
+		claims, ok := token.Claims.(jwt.MapClaims)
+		if !ok || !token.Valid {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token claims"})
+			c.Abort()
+			return
+		}
+
+		userIDFloat, ok := claims["user_id"].(float64)
+		if !ok {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid user ID format"})
+			c.Abort()
+			return
+		}
+
+		userID := uint(userIDFloat) // Safer conversion
+		c.Set("user_id", userID)
 		c.Next()
 	}
 }

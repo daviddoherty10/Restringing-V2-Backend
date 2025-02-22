@@ -1,17 +1,18 @@
 package utils
 
 import (
+	//"time"
+
 	"github.com/golang-jwt/jwt/v4"
-	"time"
 )
 
 var jwtSecret = []byte("your-secret-key") // Replace with a secure key
 
 // GenerateToken creates a new JWT
-func GenerateToken(userID uint) (string, error) {
+func GenerateToken(userID uint, exp uint64) (string, error) {
 	claims := jwt.MapClaims{
-		"userID": userID,
-		"exp":    time.Now().Add(24 * time.Hour).Unix(), // Expires in 24 hours
+		"user_id": userID,
+		"exp":     exp, // Expires in 24 hours
 	}
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 	return token.SignedString(jwtSecret)

@@ -17,6 +17,7 @@ func (s *service) CreateUser(u entity.User) error {
 	// Execute the query with the provided parameters
 	_, err := s.db.Exec(query, u.FirstName, u.Surname, u.Username, u.Email, u.EmailVerification, u.HasAcceptedTerms, u.Password, time.Now(), time.Now())
 	if err != nil {
+		log.Println("failed to insert user: %w", err)
 		return fmt.Errorf("failed to insert user: %w", err)
 	}
 

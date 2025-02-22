@@ -4,8 +4,10 @@ import (
 	"Restringing-V2/entity"
 	"Restringing-V2/internal/database"
 	"Restringing-V2/utils"
+	"fmt"
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
@@ -49,7 +51,7 @@ func Login(c *gin.Context, db database.Service) {
 		return
 	}
 
-	token, err := utils.GenerateToken(uint(user.ID))
+	token, err := utils.GenerateToken(uint(user.ID), uint64(time.Now().Add(24*time.Hour).Unix()))
 	if err != nil {
 		log.Println("Failed to Generate a token on Login: " + err.Error())
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate token"})
@@ -129,7 +131,23 @@ func RequestAccountDeletion(c *gin.Context, db database.Service) {
 
 }
 
-/*func Logout(c *gin.Context, db database.Service) {
-	token := c.GetHeader("Authorization")
+func Logout(c *gin.Context) {
+	userID, exists := c.Get("user_id")
+	if !exists {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+		return
+	}
 
-}*/
+	log.Println(userID)
+
+	token, err := utils.GenerateToken(userID.(uint), uint64(1*time.Second))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to expire token"})
+		log.Println("Failed to expire token")
+		return
+	}
+
+	c.SetCookie("auth_token", token, -1, "/", "", false, false)
+
+	c.JSON(http.StatusOK, gin.H{"message": "Logged out successfully"})
+}

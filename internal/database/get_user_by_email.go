@@ -3,8 +3,10 @@ package database
 import (
 	"Restringing-V2/entity"
 	"fmt"
+	"log"
 
 	"database/sql"
+
 	_ "github.com/joho/godotenv/autoload"
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -21,8 +23,10 @@ func (s *service) GetUserByEmail(email string) (entity.User, error) {
 	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.EmailVerification, &user.HasAcceptedTerms, &user.Password, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
 		if err == sql.ErrNoRows {
+			log.Println("user with id %d not found", email)
 			return user, fmt.Errorf("user with id %d not found", email)
 		}
+		log.Println("failed to get user: %v", err)
 		return user, fmt.Errorf("failed to get user: %v", err)
 	}
 

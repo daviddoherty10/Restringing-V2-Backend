@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"Restringing-V2/internal/server"
+	"Restringing-V2/utils"
 )
 
 func gracefulShutdown(apiServer *http.Server, done chan bool) {
@@ -38,6 +39,7 @@ func gracefulShutdown(apiServer *http.Server, done chan bool) {
 
 func main() {
 
+	utils.LoggerStartup()
 	server := server.NewServer()
 
 	// Create a done channel to signal when the shutdown is complete

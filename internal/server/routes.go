@@ -54,9 +54,13 @@ func (s *Server) RegisterRoutes() http.Handler {
 			protected.DELETE("/delete-user", func(ctx *gin.Context) {
 				controllers.RequestAccountDeletion(ctx, s.db)
 			})
-			protected.POST("/create-potenial-stringer", func(ctx *gin.Context) {
+			protected.POST("/create-potential-stringer", func(ctx *gin.Context) {
 				controllers.CreateApplication(ctx, s.db)
 			})
+			protected.POST("/logout", func(ctx *gin.Context) {
+				controllers.Logout(ctx)
+			})
+
 		}
 	}
 
