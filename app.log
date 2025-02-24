@@ -2,3 +2,505 @@
 2025/02/22 19:49:54 auth_middleware.go:29: Token received: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAzNDAxOTQsInVzZXJfaWQiOjF9.16o6yP1c6EJ2bFjl3HUfWjjyYBjOX6cVFlonXwZGWaI
 2025/02/22 19:55:34 auth_middleware.go:29: Token received: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAzNDAxOTQsInVzZXJfaWQiOjF9.16o6yP1c6EJ2bFjl3HUfWjjyYBjOX6cVFlonXwZGWaI
 2025/02/22 19:55:34 auth_controller.go:140: 1
+2025/02/23 19:53:57 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/23 19:53:57 main.go:34: Server exiting
+2025/02/23 19:53:57 main.go:58: Graceful shutdown complete.
+2025/02/24 11:17:55 logger.go:22: Logger initialized
+2025/02/24 11:18:02 logging_middleware.go:9: ---- Incoming Request ----
+2025/02/24 11:18:02 logging_middleware.go:10: Client IP: ::1
+2025/02/24 11:18:02 logging_middleware.go:11: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 11:18:02 logging_middleware.go:12: Referrer: http://localhost:5173/
+2025/02/24 11:18:02 logging_middleware.go:13: Method: POST
+2025/02/24 11:18:02 logging_middleware.go:14: URL: /api/v1/auth/login
+2025/02/24 11:18:02 logging_middleware.go:15: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 11:18:02 logging_middleware.go:16: -------------------------
+2025/02/24 11:18:03 logging_middleware.go:9: ---- Incoming Request ----
+2025/02/24 11:18:03 logging_middleware.go:10: Client IP: ::1
+2025/02/24 11:18:03 logging_middleware.go:11: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 11:18:03 logging_middleware.go:12: Referrer: http://localhost:5173/
+2025/02/24 11:18:03 logging_middleware.go:13: Method: GET
+2025/02/24 11:18:03 logging_middleware.go:14: URL: /api/v1/protected/data
+2025/02/24 11:18:03 logging_middleware.go:15: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA0ODIyODMsInVzZXJfaWQiOjF9.vrd3Uy6ABZ0bcPY-Sad1cnRwZa52sorQE32BSz1I2LU] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 11:18:03 logging_middleware.go:16: -------------------------
+2025/02/24 11:25:09 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 11:25:09 main.go:34: Server exiting
+2025/02/24 11:25:09 main.go:58: Graceful shutdown complete.
+2025/02/24 11:25:12 logger.go:22: Logger initialized
+2025/02/24 12:29:53 logging_middleware.go:9: ---- Incoming Request ----
+2025/02/24 12:29:53 logging_middleware.go:10: Client IP: ::1
+2025/02/24 12:29:53 logging_middleware.go:11: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 12:29:53 logging_middleware.go:12: Referrer: http://localhost:5173/
+2025/02/24 12:29:53 logging_middleware.go:13: Method: GET
+2025/02/24 12:29:53 logging_middleware.go:14: URL: /api/v1/protected/data
+2025/02/24 12:29:53 logging_middleware.go:15: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 12:29:53 logging_middleware.go:16: -------------------------
+2025/02/24 12:29:53 auth_middleware.go:22: Unauthorized - missing token
+2025/02/24 15:19:18 logging_middleware.go:9: ---- Incoming Request ----
+2025/02/24 15:19:18 logging_middleware.go:10: Client IP: ::1
+2025/02/24 15:19:18 logging_middleware.go:11: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 15:19:18 logging_middleware.go:12: Referrer: http://localhost:5173/
+2025/02/24 15:19:18 logging_middleware.go:13: Method: GET
+2025/02/24 15:19:18 logging_middleware.go:14: URL: /api/v1/protected/data
+2025/02/24 15:19:18 logging_middleware.go:15: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 15:19:18 logging_middleware.go:16: -------------------------
+2025/02/24 15:19:18 auth_middleware.go:22: Unauthorized - missing token
+2025/02/24 16:08:31 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 16:08:31 main.go:34: Server exiting
+2025/02/24 16:08:31 main.go:58: Graceful shutdown complete.
+2025/02/24 16:11:56 logger.go:22: Logger initialized
+2025/02/24 16:12:02 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:02 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:02 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:02 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:02 logging_middleware.go:40: Method: GET
+2025/02/24 16:12:02 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:12:02 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:02 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:02 auth_middleware.go:22: Unauthorized - missing token
+2025/02/24 16:12:02 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:02 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:02 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:02 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/02/24 16:12:02 logging_middleware.go:74: Duration: 225.917µs
+2025/02/24 16:12:02 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:16 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:16 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:16 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:16 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:16 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:16 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:16 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:16 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:16 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:16 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:16 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:16 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:16 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:16 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:16 logging_middleware.go:74: Duration: 1.470209ms
+2025/02/24 16:12:16 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:19 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:19 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:19 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:19 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:19 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:19 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:19 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:19 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:19 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:19 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:19 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:19 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:19 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:19 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:19 logging_middleware.go:74: Duration: 1.007875ms
+2025/02/24 16:12:19 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:23 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:23 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:23 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:23 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:23 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:23 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:23 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:23 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:23 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:23 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:23 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:23 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:23 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:23 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:23 logging_middleware.go:74: Duration: 916µs
+2025/02/24 16:12:23 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:25 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:25 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:25 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:25 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:25 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:25 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:25 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:25 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:25 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:25 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:25 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:25 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:25 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:25 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:25 logging_middleware.go:74: Duration: 1.054541ms
+2025/02/24 16:12:25 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:25 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:25 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:25 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:25 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:25 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:25 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:25 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:25 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:25 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:25 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:25 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:25 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:25 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:25 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:25 logging_middleware.go:74: Duration: 870.666µs
+2025/02/24 16:12:25 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:25 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:25 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:25 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:25 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:25 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:25 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:25 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:25 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:25 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:25 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:25 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:25 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:25 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:25 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:25 logging_middleware.go:74: Duration: 1.1475ms
+2025/02/24 16:12:25 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:26 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:26 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:26 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:26 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:26 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:26 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:26 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:26 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:26 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:26 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:26 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:26 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:26 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:26 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:26 logging_middleware.go:74: Duration: 822.375µs
+2025/02/24 16:12:26 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:26 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:26 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:26 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:26 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:26 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:26 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:26 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:26 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:26 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:26 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:26 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:26 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:26 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:26 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:26 logging_middleware.go:74: Duration: 1.298875ms
+2025/02/24 16:12:26 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:26 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:26 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:26 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:26 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:26 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:26 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:12:26 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:26 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:26 user.go:67: user with id %d not found daviddoherty2016@gmail.com
+2025/02/24 16:12:26 auth_controller.go:42: Failed to Get User Data on Login: user with id %!d(string=daviddoherty2016@gmail.com) not found
+2025/02/24 16:12:26 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:26 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:26 logging_middleware.go:72: Status Code: 401
+2025/02/24 16:12:26 logging_middleware.go:73: Response Body: {"error":"user with id %!d(string=daviddoherty2016@gmail.com) not found"}
+2025/02/24 16:12:26 logging_middleware.go:74: Duration: 615.209µs
+2025/02/24 16:12:26 logging_middleware.go:75: -------------------------
+2025/02/24 16:12:57 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:12:57 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:12:57 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:12:57 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:12:57 logging_middleware.go:40: Method: POST
+2025/02/24 16:12:57 logging_middleware.go:41: URL: /api/v1/auth/create-user
+2025/02/24 16:12:57 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[150] Content-Type:[application/json] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:12:57 logging_middleware.go:43: -------------------------
+2025/02/24 16:12:58 user.go:100: User created successfully: Name=David, Email=daviddoherty2016@gmail.com
+2025/02/24 16:12:58 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:12:58 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:12:58 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:12:58 logging_middleware.go:73: Response Body: {"message":"User created successfully","status":200}
+2025/02/24 16:12:58 logging_middleware.go:74: Duration: 964.203708ms
+2025/02/24 16:12:58 logging_middleware.go:75: -------------------------
+2025/02/24 16:13:02 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:13:02 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:13:02 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:13:02 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:13:02 logging_middleware.go:40: Method: POST
+2025/02/24 16:13:02 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:13:02 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:13:02 logging_middleware.go:43: -------------------------
+2025/02/24 16:13:03 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:13:03 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:13:03 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:13:03 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA0OTk5ODMsInVzZXJfaWQiOjF9.MZ5w3s6JY8PWhsDFTkM0B0CSP4ZFcx5JXmJEMnH5a-0"}
+2025/02/24 16:13:03 logging_middleware.go:74: Duration: 955.165666ms
+2025/02/24 16:13:03 logging_middleware.go:75: -------------------------
+2025/02/24 16:13:03 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:13:03 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:13:03 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:13:03 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:13:03 logging_middleware.go:40: Method: GET
+2025/02/24 16:13:03 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:13:03 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA0OTk5ODMsInVzZXJfaWQiOjF9.MZ5w3s6JY8PWhsDFTkM0B0CSP4ZFcx5JXmJEMnH5a-0] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:13:03 logging_middleware.go:43: -------------------------
+2025/02/24 16:13:03 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named useragent
+2025/02/24 16:13:03 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:13:03 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:13:03 logging_middleware.go:73: Response Body: {"message":"You have access to protected data!"}
+2025/02/24 16:13:03 logging_middleware.go:74: Duration: 135.791µs
+2025/02/24 16:13:03 logging_middleware.go:75: -------------------------
+2025/02/24 16:14:32 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 16:14:32 main.go:34: Server exiting
+2025/02/24 16:14:32 main.go:58: Graceful shutdown complete.
+2025/02/24 16:14:35 logger.go:22: Logger initialized
+2025/02/24 16:14:40 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:14:40 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:14:40 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:14:40 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:14:40 logging_middleware.go:40: Method: POST
+2025/02/24 16:14:40 logging_middleware.go:41: URL: /api/v1/protected/logout
+2025/02/24 16:14:40 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[19] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA0OTk5ODMsInVzZXJfaWQiOjF9.MZ5w3s6JY8PWhsDFTkM0B0CSP4ZFcx5JXmJEMnH5a-0] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:14:40 logging_middleware.go:43: -------------------------
+2025/02/24 16:14:40 auth_controller.go:140: 1
+2025/02/24 16:14:40 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named createdat
+2025/02/24 16:14:40 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:14:40 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:14:40 logging_middleware.go:73: Response Body: {"message":"Logged out successfully"}
+2025/02/24 16:14:40 logging_middleware.go:74: Duration: 773.125µs
+2025/02/24 16:14:40 logging_middleware.go:75: -------------------------
+2025/02/24 16:15:02 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:15:02 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:15:02 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:15:02 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:15:02 logging_middleware.go:40: Method: POST
+2025/02/24 16:15:02 logging_middleware.go:41: URL: /api/v1/auth/create-user
+2025/02/24 16:15:02 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[150] Content-Type:[application/json] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:15:02 logging_middleware.go:43: -------------------------
+2025/02/24 16:15:03 user.go:100: User created successfully: Name=David, Email=daviddoherty2016@gmail.com
+2025/02/24 16:15:03 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named createdat
+2025/02/24 16:15:03 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:15:03 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:15:03 logging_middleware.go:73: Response Body: {"message":"User created successfully","status":200}
+2025/02/24 16:15:03 logging_middleware.go:74: Duration: 956.377291ms
+2025/02/24 16:15:03 logging_middleware.go:75: -------------------------
+2025/02/24 16:15:07 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:15:07 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:15:07 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:15:07 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:15:07 logging_middleware.go:40: Method: POST
+2025/02/24 16:15:07 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:15:07 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:15:07 logging_middleware.go:43: -------------------------
+2025/02/24 16:15:07 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named createdat
+2025/02/24 16:15:07 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:15:07 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:15:07 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAxMDcsInVzZXJfaWQiOjF9.fw6MxzkRBlL_4EYiy8H05BXi1Z73mxqINo92U9IgK9M"}
+2025/02/24 16:15:07 logging_middleware.go:74: Duration: 957.511417ms
+2025/02/24 16:15:07 logging_middleware.go:75: -------------------------
+2025/02/24 16:15:08 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:15:08 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:15:08 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:15:08 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:15:08 logging_middleware.go:40: Method: GET
+2025/02/24 16:15:08 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:15:08 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAxMDcsInVzZXJfaWQiOjF9.fw6MxzkRBlL_4EYiy8H05BXi1Z73mxqINo92U9IgK9M] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:15:08 logging_middleware.go:43: -------------------------
+2025/02/24 16:15:08 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named createdat
+2025/02/24 16:15:08 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:15:08 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:15:08 logging_middleware.go:73: Response Body: {"message":"You have access to protected data!"}
+2025/02/24 16:15:08 logging_middleware.go:74: Duration: 102.958µs
+2025/02/24 16:15:08 logging_middleware.go:75: -------------------------
+2025/02/24 16:16:04 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 16:16:04 main.go:34: Server exiting
+2025/02/24 16:16:04 main.go:58: Graceful shutdown complete.
+2025/02/24 16:16:07 logger.go:22: Logger initialized
+2025/02/24 16:16:12 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:16:12 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:16:12 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:16:12 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:16:12 logging_middleware.go:40: Method: POST
+2025/02/24 16:16:12 logging_middleware.go:41: URL: /api/v1/protected/logout
+2025/02/24 16:16:12 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[19] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAxMDcsInVzZXJfaWQiOjF9.fw6MxzkRBlL_4EYiy8H05BXi1Z73mxqINo92U9IgK9M] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:16:12 logging_middleware.go:43: -------------------------
+2025/02/24 16:16:12 auth_controller.go:140: 1
+2025/02/24 16:16:12 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named create_at
+2025/02/24 16:16:12 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:16:12 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:16:12 logging_middleware.go:73: Response Body: {"message":"Logged out successfully"}
+2025/02/24 16:16:12 logging_middleware.go:74: Duration: 755.25µs
+2025/02/24 16:16:12 logging_middleware.go:75: -------------------------
+2025/02/24 16:16:16 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:16:16 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:16:16 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:16:16 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:16:16 logging_middleware.go:40: Method: POST
+2025/02/24 16:16:16 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:16:16 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:16:16 logging_middleware.go:43: -------------------------
+2025/02/24 16:16:17 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named create_at
+2025/02/24 16:16:17 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:16:17 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:16:17 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAxNzcsInVzZXJfaWQiOjF9.Ukf2iKcbk2lT-ZJU3hAbpB95KOmO4EgpQ27k8uTg1sg"}
+2025/02/24 16:16:17 logging_middleware.go:74: Duration: 961.454333ms
+2025/02/24 16:16:17 logging_middleware.go:75: -------------------------
+2025/02/24 16:16:17 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:16:17 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:16:17 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:16:17 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:16:17 logging_middleware.go:40: Method: GET
+2025/02/24 16:16:17 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:16:17 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAxNzcsInVzZXJfaWQiOjF9.Ukf2iKcbk2lT-ZJU3hAbpB95KOmO4EgpQ27k8uTg1sg] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:16:17 logging_middleware.go:43: -------------------------
+2025/02/24 16:16:17 logging_middleware.go:67: Failed to Insert Record to logging table failed to insert user: table logging has no column named create_at
+2025/02/24 16:16:17 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:16:17 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:16:17 logging_middleware.go:73: Response Body: {"message":"You have access to protected data!"}
+2025/02/24 16:16:17 logging_middleware.go:74: Duration: 156.417µs
+2025/02/24 16:16:17 logging_middleware.go:75: -------------------------
+2025/02/24 16:16:29 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 16:16:29 main.go:34: Server exiting
+2025/02/24 16:16:29 main.go:58: Graceful shutdown complete.
+2025/02/24 16:16:33 logger.go:22: Logger initialized
+2025/02/24 16:16:36 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:16:36 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:16:36 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:16:36 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:16:36 logging_middleware.go:40: Method: POST
+2025/02/24 16:16:36 logging_middleware.go:41: URL: /api/v1/protected/logout
+2025/02/24 16:16:36 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[19] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAxNzcsInVzZXJfaWQiOjF9.Ukf2iKcbk2lT-ZJU3hAbpB95KOmO4EgpQ27k8uTg1sg] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:16:36 logging_middleware.go:43: -------------------------
+2025/02/24 16:16:36 auth_controller.go:140: 1
+2025/02/24 16:16:36 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:16:36 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:16:36 logging_middleware.go:73: Response Body: {"message":"Logged out successfully"}
+2025/02/24 16:16:36 logging_middleware.go:74: Duration: 530.792µs
+2025/02/24 16:16:36 logging_middleware.go:75: -------------------------
+2025/02/24 16:16:40 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:16:40 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:16:40 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:16:40 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:16:40 logging_middleware.go:40: Method: POST
+2025/02/24 16:16:40 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/24 16:16:40 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:16:40 logging_middleware.go:43: -------------------------
+2025/02/24 16:16:41 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:16:41 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:16:41 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAyMDEsInVzZXJfaWQiOjF9.ayzm8E9L9uJJ-XkOy4RanyMhx2iHwRvMemWIyzQb9kk"}
+2025/02/24 16:16:41 logging_middleware.go:74: Duration: 948.395834ms
+2025/02/24 16:16:41 logging_middleware.go:75: -------------------------
+2025/02/24 16:16:41 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:16:41 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:16:41 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:16:41 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:16:41 logging_middleware.go:40: Method: GET
+2025/02/24 16:16:41 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:16:41 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAyMDEsInVzZXJfaWQiOjF9.ayzm8E9L9uJJ-XkOy4RanyMhx2iHwRvMemWIyzQb9kk] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:16:41 logging_middleware.go:43: -------------------------
+2025/02/24 16:16:41 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:16:41 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:16:41 logging_middleware.go:73: Response Body: {"message":"You have access to protected data!"}
+2025/02/24 16:16:41 logging_middleware.go:74: Duration: 149.375µs
+2025/02/24 16:16:41 logging_middleware.go:75: -------------------------
+2025/02/24 16:57:08 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:57:08 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:57:08 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:57:08 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:57:08 logging_middleware.go:40: Method: GET
+2025/02/24 16:57:08 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:57:08 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAyMDEsInVzZXJfaWQiOjF9.ayzm8E9L9uJJ-XkOy4RanyMhx2iHwRvMemWIyzQb9kk] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:57:08 logging_middleware.go:43: -------------------------
+2025/02/24 16:57:08 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:57:08 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:57:08 logging_middleware.go:73: Response Body: {"message":"You have access to protected data!"}
+2025/02/24 16:57:08 logging_middleware.go:74: Duration: 484.333µs
+2025/02/24 16:57:08 logging_middleware.go:75: -------------------------
+2025/02/24 16:57:21 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 16:57:21 logging_middleware.go:37: Client IP: ::1
+2025/02/24 16:57:21 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 16:57:21 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 16:57:21 logging_middleware.go:40: Method: GET
+2025/02/24 16:57:21 logging_middleware.go:41: URL: /api/v1/protected/data
+2025/02/24 16:57:21 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA1MDAyMDEsInVzZXJfaWQiOjF9.ayzm8E9L9uJJ-XkOy4RanyMhx2iHwRvMemWIyzQb9kk] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 16:57:21 logging_middleware.go:43: -------------------------
+2025/02/24 16:57:21 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 16:57:21 logging_middleware.go:72: Status Code: 200
+2025/02/24 16:57:21 logging_middleware.go:73: Response Body: {"message":"You have access to protected data!"}
+2025/02/24 16:57:21 logging_middleware.go:74: Duration: 479.625µs
+2025/02/24 16:57:21 logging_middleware.go:75: -------------------------
+2025/02/24 17:03:21 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 17:03:21 main.go:34: Server exiting
+2025/02/24 17:03:21 main.go:58: Graceful shutdown complete.
+2025/02/24 18:07:44 logger.go:22: Logger initialized
+2025/02/24 18:13:53 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 18:13:53 main.go:34: Server exiting
+2025/02/24 18:13:53 main.go:58: Graceful shutdown complete.
+2025/02/24 18:14:07 logger.go:22: Logger initialized
+2025/02/24 18:14:41 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 18:14:41 logging_middleware.go:37: Client IP: ::1
+2025/02/24 18:14:41 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 18:14:41 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 18:14:41 logging_middleware.go:40: Method: POST
+2025/02/24 18:14:41 logging_middleware.go:41: URL: /api/v1/contact-form/create
+2025/02/24 18:14:41 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[68] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 18:14:41 logging_middleware.go:43: -------------------------
+2025/02/24 18:14:41 contact_form_controller.go:33: Failed to save contact form data: Unable to Create Contact Form responsetable logging has no column named email
+2025/02/24 18:14:41 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 18:14:41 logging_middleware.go:72: Status Code: 500
+2025/02/24 18:14:41 logging_middleware.go:73: Response Body: {"error":"Database error: Unable to Create Contact Form responsetable logging has no column named email"}
+2025/02/24 18:14:41 logging_middleware.go:74: Duration: 2.490417ms
+2025/02/24 18:14:41 logging_middleware.go:75: -------------------------
+2025/02/24 18:17:34 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 18:17:34 main.go:34: Server exiting
+2025/02/24 18:17:34 main.go:58: Graceful shutdown complete.
+2025/02/24 18:17:37 logger.go:22: Logger initialized
+2025/02/24 18:17:43 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 18:17:43 logging_middleware.go:37: Client IP: ::1
+2025/02/24 18:17:43 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 18:17:43 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 18:17:43 logging_middleware.go:40: Method: POST
+2025/02/24 18:17:43 logging_middleware.go:41: URL: /api/v1/contact-form/create
+2025/02/24 18:17:43 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[72] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 18:17:43 logging_middleware.go:43: -------------------------
+2025/02/24 18:17:43 contact_form_controller.go:33: Failed to save contact form data: Unable to Create Contact Form responsetable logging has no column named email
+2025/02/24 18:17:43 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 18:17:43 logging_middleware.go:72: Status Code: 500
+2025/02/24 18:17:43 logging_middleware.go:73: Response Body: {"error":"Database error: Unable to Create Contact Form responsetable logging has no column named email"}
+2025/02/24 18:17:43 logging_middleware.go:74: Duration: 2.232ms
+2025/02/24 18:17:43 logging_middleware.go:75: -------------------------
+2025/02/24 18:18:20 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 18:18:20 main.go:34: Server exiting
+2025/02/24 18:18:20 main.go:58: Graceful shutdown complete.
+2025/02/24 18:18:25 logger.go:22: Logger initialized
+2025/02/24 18:18:31 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 18:18:31 logging_middleware.go:37: Client IP: ::1
+2025/02/24 18:18:31 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 18:18:31 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 18:18:31 logging_middleware.go:40: Method: POST
+2025/02/24 18:18:31 logging_middleware.go:41: URL: /api/v1/contact-form/create
+2025/02/24 18:18:31 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[63] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 18:18:31 logging_middleware.go:43: -------------------------
+2025/02/24 18:18:31 contact_form_controller.go:33: Failed to save contact form data: Unable to Create Contact Form responsenot enough args to execute query: want 4 got 3
+2025/02/24 18:18:31 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 18:18:31 logging_middleware.go:72: Status Code: 500
+2025/02/24 18:18:31 logging_middleware.go:73: Response Body: {"error":"Database error: Unable to Create Contact Form responsenot enough args to execute query: want 4 got 3"}
+2025/02/24 18:18:31 logging_middleware.go:74: Duration: 2.768375ms
+2025/02/24 18:18:31 logging_middleware.go:75: -------------------------
+2025/02/24 18:19:29 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/24 18:19:29 main.go:34: Server exiting
+2025/02/24 18:19:29 main.go:58: Graceful shutdown complete.
+2025/02/24 18:19:33 logger.go:22: Logger initialized
+2025/02/24 18:19:39 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/24 18:19:39 logging_middleware.go:37: Client IP: ::1
+2025/02/24 18:19:39 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/02/24 18:19:39 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/24 18:19:39 logging_middleware.go:40: Method: POST
+2025/02/24 18:19:39 logging_middleware.go:41: URL: /api/v1/contact-form/create
+2025/02/24 18:19:39 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[63] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/02/24 18:19:39 logging_middleware.go:43: -------------------------
+2025/02/24 18:19:39 logging_middleware.go:71: ---- Response Details ----
+2025/02/24 18:19:39 logging_middleware.go:72: Status Code: 200
+2025/02/24 18:19:39 logging_middleware.go:73: Response Body: {"message":"Response Successfully saved","status":200}
+2025/02/24 18:19:39 logging_middleware.go:74: Duration: 3.513375ms
+2025/02/24 18:19:39 logging_middleware.go:75: -------------------------

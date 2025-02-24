@@ -17,26 +17,24 @@ import (
 
 // Service represents a service that interacts with a database.
 type Service interface {
-	// Creates a User
+	//User
 	CreateUser(u entity.User) error
-
+	GetUserByEmail(email string) (entity.User, error)
+	GetUserByUsername(username string) (entity.User, error)
+	GetUserById(id int) (entity.User, error)
 	DeleteUser(id uint) error
 
-	//Gets a user by id
-	GetUserById(id int) (entity.User, error)
-
-	GetUserByUsername(username string) (entity.User, error)
-
-	GetUserByEmail(email string) (entity.User, error)
-	// Health returns a map of health status information.
-	// The keys and values in the map are service-specific.
-	Health() map[string]string
-
-	//Used to create an application to be listed on the website
+	//Stringers
 	CreatePotenialStringer(p entity.PotentialStringer) error
 
-	// Close terminates the database connection.
-	// It returns an error if the connection cannot be closed.
+	//Logging
+	CreateLog(l entity.LoggingMiddleware) error
+
+	//Contact Form
+	CreateContactFormResponse(res entity.ContactForm) error
+
+	//Default Options
+	Health() map[string]string
 	Close() error
 }
 

@@ -24,6 +24,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 		AllowHeaders:     []string{"Accept", "Authorization", "Content-Type"},
 		AllowCredentials: true, // Enable cookies/auth
 	}))
+	r.Use(middlewares.LoggingMiddleware(s.db))
 
 	v1Router := r.Group("/api/v1")
 	{
@@ -34,10 +35,9 @@ func (s *Server) RegisterRoutes() http.Handler {
 			})
 		}
 
-		// ✅ Corrected: auth is now inside v1Router
 		auth := v1Router.Group("/auth")
 		{
-			auth.POST("/create-user", func(ctx *gin.Context) { // ✅ Moved from userRouter
+			auth.POST("/create-user", func(ctx *gin.Context) {
 				controllers.CreateAccount(ctx, s.db)
 			})
 			auth.POST("/login", func(ctx *gin.Context) {
@@ -61,6 +61,12 @@ func (s *Server) RegisterRoutes() http.Handler {
 				controllers.Logout(ctx)
 			})
 
+		}
+		contactForm := v1Router.Group("/contact-form")
+		{
+			contactForm.POST("/create", func(ctx *gin.Context) {
+				controllers.CreateContactFormResponse(ctx, s.db)
+			})
 		}
 	}
 
