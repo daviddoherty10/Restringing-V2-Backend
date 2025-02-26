@@ -21,7 +21,7 @@ func (s *service) GetUserByUsername(username string) (entity.User, error) {
 	row := s.db.QueryRow(query, username)
 
 	// Scan the result into the user struct
-	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.Password /*, &user.EmailVerification, &user.HasAcceptedTerms*/, &user.CreatedAt, &user.UpdatedAt)
+	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.EmailVerification, &user.HasAcceptedTerms, &user.Password, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return user, fmt.Errorf("user with id %d not found", username)
@@ -33,7 +33,7 @@ func (s *service) GetUserByUsername(username string) (entity.User, error) {
 
 }
 
-func (s *service) GetUserById(id int) (entity.User, error) {
+func (s *service) GetUserById(id uint) (entity.User, error) {
 	query := `SELECT * FROM users WHERE id = ?`
 	var user entity.User
 
@@ -41,7 +41,7 @@ func (s *service) GetUserById(id int) (entity.User, error) {
 	row := s.db.QueryRow(query, id)
 
 	// Scan the result into the user struct
-	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.Password /*, &user.EmailVerification, &user.HasAcceptedTerms*/, &user.CreatedAt, &user.UpdatedAt)
+	err := row.Scan(&user.ID, &user.FirstName, &user.Surname, &user.Username, &user.Email, &user.EmailVerification, &user.HasAcceptedTerms, &user.Password, &user.CreatedAt, &user.UpdatedAt)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return user, fmt.Errorf("user with id %d not found", id)
@@ -98,5 +98,15 @@ func (s *service) CreateUser(u entity.User) error {
 	}
 
 	log.Printf("User created successfully: Name=%s, Email=%s", u.FirstName, u.Email)
+	return nil
+}
+
+func (s *service) UpdateUser(u entity.User) error {
+	query := `UPDATE users (firstname, surname, username, email, email_confirmed, has_accepted_terms, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) WHRE id = ? VALUES (?)`
+
+	_, err := s.db.Exec(query, u.FirstName, u.Surname, u.Username, u.Email, u.EmailVerification, u.HasAcceptedTerms, u.Password, time.Now(), time.Now())
+	if err != nil {
+		return err
+	}
 	return nil
 }

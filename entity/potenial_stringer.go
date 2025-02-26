@@ -1,7 +1,7 @@
 package entity
 
 type PotentialStringer struct {
-	ID                int    `json:"id" binding:"required"`
+	ID                uint   `json:"id" binding:"required"`
 	YearsOfExperience int    `json:"yearsOfExperience" binding:"required"`
 	Message           string `json:"message" binding:"required"`
 	Status            bool   `json:"status" binding:"required"`

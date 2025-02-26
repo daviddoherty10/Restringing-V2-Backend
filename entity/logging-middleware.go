@@ -5,7 +5,7 @@ import (
 )
 
 type LoggingMiddleware struct {
-	Id              int
+	Id              uint
 	StatusCode      int
 	ClientIP        string
 	UserAgent       string

@@ -19,7 +19,7 @@ func CreateApplication(c *gin.Context, db database.Service) {
 		})
 	}
 
-	potentialStringinger.ID = id.(int)
+	potentialStringinger.ID = id.(uint)
 
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{

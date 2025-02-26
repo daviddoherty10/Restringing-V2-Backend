@@ -19,9 +19,10 @@ import (
 type Service interface {
 	//User
 	CreateUser(u entity.User) error
+	UpdateUser(u entity.User) error
 	GetUserByEmail(email string) (entity.User, error)
 	GetUserByUsername(username string) (entity.User, error)
-	GetUserById(id int) (entity.User, error)
+	GetUserById(id uint) (entity.User, error)
 	DeleteUser(id uint) error
 
 	//Stringers

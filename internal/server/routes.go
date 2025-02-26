@@ -22,19 +22,12 @@ func (s *Server) RegisterRoutes() http.Handler {
 		AllowOrigins:     []string{"http://localhost:5173"}, // Add your frontend URL
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"},
 		AllowHeaders:     []string{"Accept", "Authorization", "Content-Type"},
-		AllowCredentials: true, // Enable cookies/auth
+		AllowCredentials: true,
 	}))
 	r.Use(middlewares.LoggingMiddleware(s.db))
 
 	v1Router := r.Group("/api/v1")
 	{
-		userRouter := v1Router.Group("/user")
-		{
-			userRouter.GET("/get-user-by-id/:id", func(ctx *gin.Context) {
-				controllers.HandleGetUserById(s.db, ctx)
-			})
-		}
-
 		auth := v1Router.Group("/auth")
 		{
 			auth.POST("/create-user", func(ctx *gin.Context) {
@@ -48,9 +41,12 @@ func (s *Server) RegisterRoutes() http.Handler {
 		protected := v1Router.Group("/protected")
 		protected.Use(middlewares.AuthMiddleware())
 		{
-			protected.GET("/data", func(c *gin.Context) {
-				c.JSON(http.StatusOK, gin.H{"message": "You have access to protected data!"})
-			})
+			userRouter := protected.Group("/user")
+			{
+				userRouter.GET("/data", func(ctx *gin.Context) {
+					controllers.GetUserData(ctx, s.db)
+				})
+			}
 			protected.DELETE("/delete-user", func(ctx *gin.Context) {
 				controllers.RequestAccountDeletion(ctx, s.db)
 			})

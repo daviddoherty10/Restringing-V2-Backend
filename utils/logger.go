@@ -15,8 +15,8 @@ func LoggerStartup() {
 	}
 
 	// Set log output to both stdout and the log file
-	multiWriter := io.MultiWriter(os.Stdout, logFile)
-	log.SetOutput(multiWriter)
+	Writer := io.Writer(logFile)
+	log.SetOutput(Writer)
 	log.SetFlags(log.LstdFlags | log.Lshortfile) // Adds timestamps & file info
 
 	log.Println("Logger initialized") // Test log to confirm it's working
