@@ -8,6 +8,12 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
+type AvailableString struct {
+	Name   string
+	Gauge  float32
+	Colour float32
+}
+
 func (s *service) CreatePotenialStringer(p entity.PotentialStringer) error {
 	// Define the SQL INSERT query
 	query := `INSERT INTO potenialStringer (id, yearsOfExperience,message,status) VALUES (?, ?, ?, ?, ?, ?, ?)`
@@ -20,3 +26,7 @@ func (s *service) CreatePotenialStringer(p entity.PotentialStringer) error {
 
 	return nil
 }
+
+/*func (s *service) GetAvailableStrings(id uint) (error, []AvailableString) {
+	return nil,
+}*/

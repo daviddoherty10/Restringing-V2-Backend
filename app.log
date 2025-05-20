@@ -2017,3 +2017,1006 @@
 2025/02/26 11:03:19 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
 2025/02/26 11:03:19 logging_middleware.go:74: Duration: 271.959µs
 2025/02/26 11:03:19 logging_middleware.go:75: -------------------------
+2025/02/26 22:21:31 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/26 22:21:31 logging_middleware.go:37: Client IP: ::1
+2025/02/26 22:21:31 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/02/26 22:21:31 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/26 22:21:31 logging_middleware.go:40: Method: POST
+2025/02/26 22:21:31 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/26 22:21:31 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/02/26 22:21:31 logging_middleware.go:43: -------------------------
+2025/02/26 22:21:32 logging_middleware.go:71: ---- Response Details ----
+2025/02/26 22:21:32 logging_middleware.go:72: Status Code: 200
+2025/02/26 22:21:32 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2OTQ4OTIsInVzZXJfaWQiOjF9.HGyEzc75wdSgnXOGRMmZGjSvjAYcoY2ZHk9LAcz6Zh8"}
+2025/02/26 22:21:32 logging_middleware.go:74: Duration: 961.0315ms
+2025/02/26 22:21:32 logging_middleware.go:75: -------------------------
+2025/02/26 22:21:32 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/26 22:21:32 logging_middleware.go:37: Client IP: ::1
+2025/02/26 22:21:32 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/02/26 22:21:32 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/26 22:21:32 logging_middleware.go:40: Method: GET
+2025/02/26 22:21:32 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/02/26 22:21:32 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2OTQ4OTIsInVzZXJfaWQiOjF9.HGyEzc75wdSgnXOGRMmZGjSvjAYcoY2ZHk9LAcz6Zh8] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/02/26 22:21:32 logging_middleware.go:43: -------------------------
+2025/02/26 22:21:32 logging_middleware.go:71: ---- Response Details ----
+2025/02/26 22:21:32 logging_middleware.go:72: Status Code: 200
+2025/02/26 22:21:32 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/02/26 22:21:32 logging_middleware.go:74: Duration: 228.917µs
+2025/02/26 22:21:32 logging_middleware.go:75: -------------------------
+2025/02/26 22:30:14 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/26 22:30:14 logging_middleware.go:37: Client IP: ::1
+2025/02/26 22:30:14 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/02/26 22:30:14 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/26 22:30:14 logging_middleware.go:40: Method: GET
+2025/02/26 22:30:14 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/02/26 22:30:14 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2OTQ4OTIsInVzZXJfaWQiOjF9.HGyEzc75wdSgnXOGRMmZGjSvjAYcoY2ZHk9LAcz6Zh8] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/02/26 22:30:14 logging_middleware.go:43: -------------------------
+2025/02/26 22:30:14 logging_middleware.go:71: ---- Response Details ----
+2025/02/26 22:30:14 logging_middleware.go:72: Status Code: 200
+2025/02/26 22:30:14 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/02/26 22:30:14 logging_middleware.go:74: Duration: 394.625µs
+2025/02/26 22:30:14 logging_middleware.go:75: -------------------------
+2025/02/26 22:39:49 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/26 22:39:49 main.go:34: Server exiting
+2025/02/26 22:39:49 main.go:58: Graceful shutdown complete.
+2025/02/26 22:50:29 logger.go:22: Logger initialized
+2025/02/26 22:50:37 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/26 22:50:37 logging_middleware.go:37: Client IP: ::1
+2025/02/26 22:50:37 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/02/26 22:50:37 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/26 22:50:37 logging_middleware.go:40: Method: POST
+2025/02/26 22:50:37 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/02/26 22:50:37 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2OTQ4OTIsInVzZXJfaWQiOjF9.HGyEzc75wdSgnXOGRMmZGjSvjAYcoY2ZHk9LAcz6Zh8] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/02/26 22:50:37 logging_middleware.go:43: -------------------------
+2025/02/26 22:50:38 logging_middleware.go:71: ---- Response Details ----
+2025/02/26 22:50:38 logging_middleware.go:72: Status Code: 200
+2025/02/26 22:50:38 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2OTY2MzgsInVzZXJfaWQiOjF9.nWcTxXVrMAYLfChN5aj5hKJndx3brQczTzYuGHxW7qc"}
+2025/02/26 22:50:38 logging_middleware.go:74: Duration: 968.58125ms
+2025/02/26 22:50:38 logging_middleware.go:75: -------------------------
+2025/02/26 22:50:38 logging_middleware.go:36: ---- Incoming Request ----
+2025/02/26 22:50:38 logging_middleware.go:37: Client IP: ::1
+2025/02/26 22:50:38 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/02/26 22:50:38 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/02/26 22:50:38 logging_middleware.go:40: Method: GET
+2025/02/26 22:50:38 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/02/26 22:50:38 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2OTY2MzgsInVzZXJfaWQiOjF9.nWcTxXVrMAYLfChN5aj5hKJndx3brQczTzYuGHxW7qc] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/02/26 22:50:38 logging_middleware.go:43: -------------------------
+2025/02/26 22:50:38 logging_middleware.go:71: ---- Response Details ----
+2025/02/26 22:50:38 logging_middleware.go:72: Status Code: 200
+2025/02/26 22:50:38 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/02/26 22:50:38 logging_middleware.go:74: Duration: 197.833µs
+2025/02/26 22:50:38 logging_middleware.go:75: -------------------------
+2025/02/26 23:00:54 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/02/26 23:00:54 main.go:34: Server exiting
+2025/02/26 23:00:54 main.go:58: Graceful shutdown complete.
+2025/02/28 10:44:24 logger.go:22: Logger initialized
+2025/03/09 14:42:22 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/03/09 14:42:22 main.go:34: Server exiting
+2025/03/09 14:42:22 main.go:58: Graceful shutdown complete.
+2025/03/17 00:36:07 logger.go:22: Logger initialized
+2025/03/17 00:36:14 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:14 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:14 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:14 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:14 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:14 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:14 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:14 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:15 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:15 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:15 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzUsInVzZXJfaWQiOjF9.hJWvN-9qWlRoEngEEAOzbEttFakMQ5QWoQFl32arQdc"}
+2025/03/17 00:36:15 logging_middleware.go:74: Duration: 959.310666ms
+2025/03/17 00:36:15 logging_middleware.go:75: -------------------------
+2025/03/17 00:36:15 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:15 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:15 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:15 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:15 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:15 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:15 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzUsInVzZXJfaWQiOjF9.hJWvN-9qWlRoEngEEAOzbEttFakMQ5QWoQFl32arQdc] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:15 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:15 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:15 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:15 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:15 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:15 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:15 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:15 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzUsInVzZXJfaWQiOjF9.hJWvN-9qWlRoEngEEAOzbEttFakMQ5QWoQFl32arQdc] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:15 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:15 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:15 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:15 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:15 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:15 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:15 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:15 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzUsInVzZXJfaWQiOjF9.hJWvN-9qWlRoEngEEAOzbEttFakMQ5QWoQFl32arQdc] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:15 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:16 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:16 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:16 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzYsInVzZXJfaWQiOjF9.HPMQgI4nnzrnp4YmN2PANSYyBB0-GANhq2RbBvYusoE"}
+2025/03/17 00:36:16 logging_middleware.go:74: Duration: 968.434708ms
+2025/03/17 00:36:16 logging_middleware.go:75: -------------------------
+2025/03/17 00:36:16 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:16 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:16 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzYsInVzZXJfaWQiOjF9.HPMQgI4nnzrnp4YmN2PANSYyBB0-GANhq2RbBvYusoE"}
+2025/03/17 00:36:16 logging_middleware.go:74: Duration: 966.815959ms
+2025/03/17 00:36:16 logging_middleware.go:75: -------------------------
+2025/03/17 00:36:16 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:16 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:16 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzYsInVzZXJfaWQiOjF9.HPMQgI4nnzrnp4YmN2PANSYyBB0-GANhq2RbBvYusoE"}
+2025/03/17 00:36:16 logging_middleware.go:74: Duration: 955.474166ms
+2025/03/17 00:36:16 logging_middleware.go:75: -------------------------
+2025/03/17 00:36:19 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:19 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:19 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:19 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:19 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:19 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:19 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxNzYsInVzZXJfaWQiOjF9.HPMQgI4nnzrnp4YmN2PANSYyBB0-GANhq2RbBvYusoE] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:19 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:20 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:20 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxODAsInVzZXJfaWQiOjF9.4KG5m8sF-ah8MNEjmxF-qO96iPpkxrD2YicYKV26mBw"}
+2025/03/17 00:36:20 logging_middleware.go:74: Duration: 963.606083ms
+2025/03/17 00:36:20 logging_middleware.go:75: -------------------------
+2025/03/17 00:36:22 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:22 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:22 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:22 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:22 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:22 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:22 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxODAsInVzZXJfaWQiOjF9.4KG5m8sF-ah8MNEjmxF-qO96iPpkxrD2YicYKV26mBw] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:22 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:23 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:23 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:23 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxODMsInVzZXJfaWQiOjF9.HbmwUBwxR0Z3qNg6YbSh1mTUO0rbNSxQdFJzzGQM4gM"}
+2025/03/17 00:36:23 logging_middleware.go:74: Duration: 963.337708ms
+2025/03/17 00:36:23 logging_middleware.go:75: -------------------------
+2025/03/17 00:36:24 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:36:24 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:36:24 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:36:24 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:36:24 logging_middleware.go:40: Method: POST
+2025/03/17 00:36:24 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:36:24 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxODMsInVzZXJfaWQiOjF9.HbmwUBwxR0Z3qNg6YbSh1mTUO0rbNSxQdFJzzGQM4gM] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:36:24 logging_middleware.go:43: -------------------------
+2025/03/17 00:36:25 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:36:25 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:36:25 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxODUsInVzZXJfaWQiOjF9.6CIEQU9QDA3PVooP95vMK_cX1WCutajrNIX9Dp2qKTY"}
+2025/03/17 00:36:25 logging_middleware.go:74: Duration: 970.522209ms
+2025/03/17 00:36:25 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:16 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:16 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:16 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:16 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:16 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:16 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:16 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgxODUsInVzZXJfaWQiOjF9.6CIEQU9QDA3PVooP95vMK_cX1WCutajrNIX9Dp2qKTY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:16 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:17 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:17 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:17 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzcsInVzZXJfaWQiOjF9.o7AgkFd2oIuIWnm24ebIJMu9V-d_UgKuAoiEQ-gweWY"}
+2025/03/17 00:37:17 logging_middleware.go:74: Duration: 941.293708ms
+2025/03/17 00:37:17 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:18 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:18 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:18 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:18 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:18 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:18 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:18 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzcsInVzZXJfaWQiOjF9.o7AgkFd2oIuIWnm24ebIJMu9V-d_UgKuAoiEQ-gweWY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:18 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:19 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:19 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:19 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:19 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:19 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:19 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:19 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzcsInVzZXJfaWQiOjF9.o7AgkFd2oIuIWnm24ebIJMu9V-d_UgKuAoiEQ-gweWY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:19 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:19 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:19 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:19 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:19 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:19 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:19 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:19 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzcsInVzZXJfaWQiOjF9.o7AgkFd2oIuIWnm24ebIJMu9V-d_UgKuAoiEQ-gweWY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:19 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:19 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:19 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:19 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:19 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:19 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:19 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:19 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzcsInVzZXJfaWQiOjF9.o7AgkFd2oIuIWnm24ebIJMu9V-d_UgKuAoiEQ-gweWY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:19 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:19 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:19 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:19 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:19 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:19 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:19 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:19 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzcsInVzZXJfaWQiOjF9.o7AgkFd2oIuIWnm24ebIJMu9V-d_UgKuAoiEQ-gweWY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:19 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:19 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:19 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:19 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyMzksInVzZXJfaWQiOjF9.1Eou1-Nz6SSmetHL6LfuSKweh9-SIFFGMd-7tEV68sY"}
+2025/03/17 00:37:19 logging_middleware.go:74: Duration: 1.004209458s
+2025/03/17 00:37:19 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:20 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:20 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNDAsInVzZXJfaWQiOjF9.2MTYwFCqTikL-iBQIa58QAGm3oU0-2kGBUTqpDFSUkg"}
+2025/03/17 00:37:20 logging_middleware.go:74: Duration: 978.166292ms
+2025/03/17 00:37:20 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:20 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:20 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNDAsInVzZXJfaWQiOjF9.2MTYwFCqTikL-iBQIa58QAGm3oU0-2kGBUTqpDFSUkg"}
+2025/03/17 00:37:20 logging_middleware.go:74: Duration: 983.556083ms
+2025/03/17 00:37:20 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:20 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:20 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNDAsInVzZXJfaWQiOjF9.2MTYwFCqTikL-iBQIa58QAGm3oU0-2kGBUTqpDFSUkg"}
+2025/03/17 00:37:20 logging_middleware.go:74: Duration: 973.844542ms
+2025/03/17 00:37:20 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:20 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:20 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNDAsInVzZXJfaWQiOjF9.2MTYwFCqTikL-iBQIa58QAGm3oU0-2kGBUTqpDFSUkg"}
+2025/03/17 00:37:20 logging_middleware.go:74: Duration: 970.150459ms
+2025/03/17 00:37:20 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:46 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:46 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:46 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:46 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:46 logging_middleware.go:40: Method: POST
+2025/03/17 00:37:46 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/17 00:37:46 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNDAsInVzZXJfaWQiOjF9.2MTYwFCqTikL-iBQIa58QAGm3oU0-2kGBUTqpDFSUkg] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:46 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:46 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:46 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:46 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNjYsInVzZXJfaWQiOjF9.b4eyTbRo6tyCmt2B-73-5Ly_v_9nBA0JD-lzaAT3blQ"}
+2025/03/17 00:37:46 logging_middleware.go:74: Duration: 962.141916ms
+2025/03/17 00:37:46 logging_middleware.go:75: -------------------------
+2025/03/17 00:37:47 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:37:47 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:37:47 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:37:47 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:37:47 logging_middleware.go:40: Method: GET
+2025/03/17 00:37:47 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/17 00:37:47 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNjYsInVzZXJfaWQiOjF9.b4eyTbRo6tyCmt2B-73-5Ly_v_9nBA0JD-lzaAT3blQ] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:37:47 logging_middleware.go:43: -------------------------
+2025/03/17 00:37:47 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:37:47 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:37:47 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/17 00:37:47 logging_middleware.go:74: Duration: 195.958µs
+2025/03/17 00:37:47 logging_middleware.go:75: -------------------------
+2025/03/17 00:47:18 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 00:47:18 logging_middleware.go:37: Client IP: ::1
+2025/03/17 00:47:18 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 00:47:18 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 00:47:18 logging_middleware.go:40: Method: GET
+2025/03/17 00:47:18 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/17 00:47:18 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNTgyNjYsInVzZXJfaWQiOjF9.b4eyTbRo6tyCmt2B-73-5Ly_v_9nBA0JD-lzaAT3blQ] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 00:47:18 logging_middleware.go:43: -------------------------
+2025/03/17 00:47:18 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 00:47:18 logging_middleware.go:72: Status Code: 200
+2025/03/17 00:47:18 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/17 00:47:18 logging_middleware.go:74: Duration: 468.583µs
+2025/03/17 00:47:18 logging_middleware.go:75: -------------------------
+2025/03/17 01:43:32 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/17 01:43:32 logging_middleware.go:37: Client IP: ::1
+2025/03/17 01:43:32 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/17 01:43:32 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/17 01:43:32 logging_middleware.go:40: Method: GET
+2025/03/17 01:43:32 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/17 01:43:32 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/17 01:43:32 logging_middleware.go:43: -------------------------
+2025/03/17 01:43:32 auth_middleware.go:22: Unauthorized - missing token
+2025/03/17 01:43:32 logging_middleware.go:71: ---- Response Details ----
+2025/03/17 01:43:32 logging_middleware.go:72: Status Code: 401
+2025/03/17 01:43:32 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/17 01:43:32 logging_middleware.go:74: Duration: 1.253792ms
+2025/03/17 01:43:32 logging_middleware.go:75: -------------------------
+2025/03/18 11:03:52 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:03:52 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:03:52 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:03:52 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:03:52 logging_middleware.go:40: Method: GET
+2025/03/18 11:03:52 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:03:52 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:03:52 logging_middleware.go:43: -------------------------
+2025/03/18 11:03:52 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:03:52 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:03:52 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:03:52 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:03:52 logging_middleware.go:74: Duration: 3.727833ms
+2025/03/18 11:03:52 logging_middleware.go:75: -------------------------
+2025/03/18 11:03:53 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:03:53 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:03:53 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:03:53 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:03:53 logging_middleware.go:40: Method: GET
+2025/03/18 11:03:53 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:03:53 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:03:53 logging_middleware.go:43: -------------------------
+2025/03/18 11:03:53 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:03:53 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:03:53 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:03:53 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:03:53 logging_middleware.go:74: Duration: 229.5µs
+2025/03/18 11:03:53 logging_middleware.go:75: -------------------------
+2025/03/18 11:03:53 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:03:53 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:03:53 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:03:53 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:03:53 logging_middleware.go:40: Method: GET
+2025/03/18 11:03:53 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:03:53 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:03:53 logging_middleware.go:43: -------------------------
+2025/03/18 11:03:53 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:03:53 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:03:53 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:03:53 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:03:53 logging_middleware.go:74: Duration: 482.75µs
+2025/03/18 11:03:53 logging_middleware.go:75: -------------------------
+2025/03/18 11:03:53 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:03:53 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:03:53 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:03:53 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:03:53 logging_middleware.go:40: Method: GET
+2025/03/18 11:03:53 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:03:53 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:03:53 logging_middleware.go:43: -------------------------
+2025/03/18 11:03:53 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:03:53 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:03:53 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:03:53 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:03:53 logging_middleware.go:74: Duration: 251.208µs
+2025/03/18 11:03:53 logging_middleware.go:75: -------------------------
+2025/03/18 11:03:53 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:03:53 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:03:53 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:03:53 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:03:53 logging_middleware.go:40: Method: GET
+2025/03/18 11:03:53 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:03:53 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:03:53 logging_middleware.go:43: -------------------------
+2025/03/18 11:03:53 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:03:53 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:03:53 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:03:53 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:03:53 logging_middleware.go:74: Duration: 1.309708ms
+2025/03/18 11:03:53 logging_middleware.go:75: -------------------------
+2025/03/18 11:03:58 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:03:58 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:03:58 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:03:58 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:03:58 logging_middleware.go:40: Method: GET
+2025/03/18 11:03:58 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:03:58 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:03:58 logging_middleware.go:43: -------------------------
+2025/03/18 11:03:58 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:03:58 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:03:58 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:03:58 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:03:58 logging_middleware.go:74: Duration: 275.5µs
+2025/03/18 11:03:58 logging_middleware.go:75: -------------------------
+2025/03/18 11:04:02 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:04:02 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:04:02 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:04:02 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:04:02 logging_middleware.go:40: Method: GET
+2025/03/18 11:04:02 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:04:02 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:04:02 logging_middleware.go:43: -------------------------
+2025/03/18 11:04:02 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:04:02 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:04:02 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:04:02 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:04:02 logging_middleware.go:74: Duration: 342.083µs
+2025/03/18 11:04:02 logging_middleware.go:75: -------------------------
+2025/03/18 11:04:03 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:04:03 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:04:03 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:04:03 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:04:03 logging_middleware.go:40: Method: GET
+2025/03/18 11:04:03 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:04:03 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:04:03 logging_middleware.go:43: -------------------------
+2025/03/18 11:04:03 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:04:03 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:04:03 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:04:03 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:04:03 logging_middleware.go:74: Duration: 355.5µs
+2025/03/18 11:04:03 logging_middleware.go:75: -------------------------
+2025/03/18 11:04:03 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:04:03 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:04:03 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:04:03 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:04:03 logging_middleware.go:40: Method: GET
+2025/03/18 11:04:03 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:04:03 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:04:03 logging_middleware.go:43: -------------------------
+2025/03/18 11:04:03 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:04:03 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:04:03 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:04:03 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:04:03 logging_middleware.go:74: Duration: 211µs
+2025/03/18 11:04:03 logging_middleware.go:75: -------------------------
+2025/03/18 11:04:03 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:04:03 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:04:03 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:04:03 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:04:03 logging_middleware.go:40: Method: GET
+2025/03/18 11:04:03 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:04:03 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:04:03 logging_middleware.go:43: -------------------------
+2025/03/18 11:04:03 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:04:03 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:04:03 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:04:03 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:04:03 logging_middleware.go:74: Duration: 187.875µs
+2025/03/18 11:04:03 logging_middleware.go:75: -------------------------
+2025/03/18 11:11:17 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:11:17 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:11:17 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:11:17 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:11:17 logging_middleware.go:40: Method: GET
+2025/03/18 11:11:17 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:11:17 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:11:17 logging_middleware.go:43: -------------------------
+2025/03/18 11:11:17 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:11:17 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:11:17 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:11:17 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:11:17 logging_middleware.go:74: Duration: 474.041µs
+2025/03/18 11:11:17 logging_middleware.go:75: -------------------------
+2025/03/18 11:12:24 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:12:24 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:12:24 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:12:24 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:12:24 logging_middleware.go:40: Method: GET
+2025/03/18 11:12:24 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:12:24 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:12:24 logging_middleware.go:43: -------------------------
+2025/03/18 11:12:24 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:12:24 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:12:24 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:12:24 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:12:24 logging_middleware.go:74: Duration: 652.792µs
+2025/03/18 11:12:24 logging_middleware.go:75: -------------------------
+2025/03/18 11:16:47 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:16:47 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:16:47 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:16:47 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:16:47 logging_middleware.go:40: Method: GET
+2025/03/18 11:16:47 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:16:47 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:16:47 logging_middleware.go:43: -------------------------
+2025/03/18 11:16:47 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:16:47 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:16:47 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:16:47 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:16:47 logging_middleware.go:74: Duration: 900.917µs
+2025/03/18 11:16:47 logging_middleware.go:75: -------------------------
+2025/03/18 11:28:36 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 11:28:36 logging_middleware.go:37: Client IP: ::1
+2025/03/18 11:28:36 logging_middleware.go:38: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
+2025/03/18 11:28:36 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 11:28:36 logging_middleware.go:40: Method: GET
+2025/03/18 11:28:36 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 11:28:36 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1]]
+2025/03/18 11:28:36 logging_middleware.go:43: -------------------------
+2025/03/18 11:28:36 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 11:28:36 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 11:28:36 logging_middleware.go:72: Status Code: 401
+2025/03/18 11:28:36 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 11:28:36 logging_middleware.go:74: Duration: 1.0455ms
+2025/03/18 11:28:36 logging_middleware.go:75: -------------------------
+2025/03/18 17:51:39 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 17:51:39 logging_middleware.go:37: Client IP: ::1
+2025/03/18 17:51:39 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 17:51:39 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 17:51:39 logging_middleware.go:40: Method: GET
+2025/03/18 17:51:39 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 17:51:39 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 17:51:39 logging_middleware.go:43: -------------------------
+2025/03/18 17:51:39 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 17:51:39 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 17:51:39 logging_middleware.go:72: Status Code: 401
+2025/03/18 17:51:39 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 17:51:39 logging_middleware.go:74: Duration: 595.375µs
+2025/03/18 17:51:39 logging_middleware.go:75: -------------------------
+2025/03/18 17:51:40 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 17:51:40 logging_middleware.go:37: Client IP: ::1
+2025/03/18 17:51:40 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 17:51:40 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 17:51:40 logging_middleware.go:40: Method: GET
+2025/03/18 17:51:40 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 17:51:40 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 17:51:40 logging_middleware.go:43: -------------------------
+2025/03/18 17:51:40 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 17:51:40 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 17:51:40 logging_middleware.go:72: Status Code: 401
+2025/03/18 17:51:40 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 17:51:40 logging_middleware.go:74: Duration: 434.5µs
+2025/03/18 17:51:40 logging_middleware.go:75: -------------------------
+2025/03/18 17:51:41 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 17:51:41 logging_middleware.go:37: Client IP: ::1
+2025/03/18 17:51:41 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 17:51:41 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 17:51:41 logging_middleware.go:40: Method: GET
+2025/03/18 17:51:41 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 17:51:41 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 17:51:41 logging_middleware.go:43: -------------------------
+2025/03/18 17:51:41 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 17:51:41 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 17:51:41 logging_middleware.go:72: Status Code: 401
+2025/03/18 17:51:41 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 17:51:41 logging_middleware.go:74: Duration: 232.334µs
+2025/03/18 17:51:41 logging_middleware.go:75: -------------------------
+2025/03/18 18:08:53 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 18:08:53 logging_middleware.go:37: Client IP: ::1
+2025/03/18 18:08:53 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 18:08:53 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 18:08:53 logging_middleware.go:40: Method: GET
+2025/03/18 18:08:53 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 18:08:53 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 18:08:53 logging_middleware.go:43: -------------------------
+2025/03/18 18:08:53 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 18:08:53 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 18:08:53 logging_middleware.go:72: Status Code: 401
+2025/03/18 18:08:53 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 18:08:53 logging_middleware.go:74: Duration: 1.712917ms
+2025/03/18 18:08:53 logging_middleware.go:75: -------------------------
+2025/03/18 20:42:45 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 20:42:45 logging_middleware.go:37: Client IP: ::1
+2025/03/18 20:42:45 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 20:42:45 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 20:42:45 logging_middleware.go:40: Method: GET
+2025/03/18 20:42:45 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 20:42:45 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 20:42:45 logging_middleware.go:43: -------------------------
+2025/03/18 20:42:45 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 20:42:45 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 20:42:45 logging_middleware.go:72: Status Code: 401
+2025/03/18 20:42:45 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 20:42:45 logging_middleware.go:74: Duration: 1.066458ms
+2025/03/18 20:42:45 logging_middleware.go:75: -------------------------
+2025/03/18 20:42:46 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 20:42:46 logging_middleware.go:37: Client IP: ::1
+2025/03/18 20:42:46 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 20:42:46 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 20:42:46 logging_middleware.go:40: Method: GET
+2025/03/18 20:42:46 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 20:42:46 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 20:42:46 logging_middleware.go:43: -------------------------
+2025/03/18 20:42:46 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 20:42:46 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 20:42:46 logging_middleware.go:72: Status Code: 401
+2025/03/18 20:42:46 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 20:42:46 logging_middleware.go:74: Duration: 468.875µs
+2025/03/18 20:42:46 logging_middleware.go:75: -------------------------
+2025/03/18 20:42:49 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 20:42:49 logging_middleware.go:37: Client IP: ::1
+2025/03/18 20:42:49 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 20:42:49 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 20:42:49 logging_middleware.go:40: Method: GET
+2025/03/18 20:42:49 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 20:42:49 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 20:42:49 logging_middleware.go:43: -------------------------
+2025/03/18 20:42:49 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 20:42:49 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 20:42:49 logging_middleware.go:72: Status Code: 401
+2025/03/18 20:42:49 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 20:42:49 logging_middleware.go:74: Duration: 247.208µs
+2025/03/18 20:42:49 logging_middleware.go:75: -------------------------
+2025/03/18 20:59:01 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 20:59:01 logging_middleware.go:37: Client IP: ::1
+2025/03/18 20:59:01 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 20:59:01 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 20:59:01 logging_middleware.go:40: Method: GET
+2025/03/18 20:59:01 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 20:59:01 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 20:59:01 logging_middleware.go:43: -------------------------
+2025/03/18 20:59:01 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 20:59:01 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 20:59:01 logging_middleware.go:72: Status Code: 401
+2025/03/18 20:59:01 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 20:59:01 logging_middleware.go:74: Duration: 845.25µs
+2025/03/18 20:59:01 logging_middleware.go:75: -------------------------
+2025/03/18 20:59:01 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 20:59:01 logging_middleware.go:37: Client IP: ::1
+2025/03/18 20:59:01 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 20:59:01 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 20:59:01 logging_middleware.go:40: Method: GET
+2025/03/18 20:59:01 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 20:59:01 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 20:59:01 logging_middleware.go:43: -------------------------
+2025/03/18 20:59:01 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 20:59:01 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 20:59:01 logging_middleware.go:72: Status Code: 401
+2025/03/18 20:59:01 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 20:59:01 logging_middleware.go:74: Duration: 311.625µs
+2025/03/18 20:59:01 logging_middleware.go:75: -------------------------
+2025/03/18 20:59:54 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 20:59:54 logging_middleware.go:37: Client IP: ::1
+2025/03/18 20:59:54 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 20:59:54 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 20:59:54 logging_middleware.go:40: Method: GET
+2025/03/18 20:59:54 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 20:59:54 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 20:59:54 logging_middleware.go:43: -------------------------
+2025/03/18 20:59:54 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 20:59:54 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 20:59:54 logging_middleware.go:72: Status Code: 401
+2025/03/18 20:59:54 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 20:59:54 logging_middleware.go:74: Duration: 295.667µs
+2025/03/18 20:59:54 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:11 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:11 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:11 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:11 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:11 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:11 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:11 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:11 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:11 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:11 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:11 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:11 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:11 logging_middleware.go:74: Duration: 187.458µs
+2025/03/18 21:00:11 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:34 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:34 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:34 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:34 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:34 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:34 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:34 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:34 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:34 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:34 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:34 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:34 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:34 logging_middleware.go:74: Duration: 594.459µs
+2025/03/18 21:00:34 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:38 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:38 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:38 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:38 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:38 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:38 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:38 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:38 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:38 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:38 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:38 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:38 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:38 logging_middleware.go:74: Duration: 222.375µs
+2025/03/18 21:00:38 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:38 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:38 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:38 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:38 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:38 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:38 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:38 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:38 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:38 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:38 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:38 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:38 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:38 logging_middleware.go:74: Duration: 267.375µs
+2025/03/18 21:00:38 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:39 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:39 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:39 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:39 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:39 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:39 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:39 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:39 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:39 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:39 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:39 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:39 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:39 logging_middleware.go:74: Duration: 183.417µs
+2025/03/18 21:00:39 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:39 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:39 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:39 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:39 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:39 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:39 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:39 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:39 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:39 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:39 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:39 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:39 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:39 logging_middleware.go:74: Duration: 187.5µs
+2025/03/18 21:00:39 logging_middleware.go:75: -------------------------
+2025/03/18 21:00:39 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 21:00:39 logging_middleware.go:37: Client IP: ::1
+2025/03/18 21:00:39 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 21:00:39 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 21:00:39 logging_middleware.go:40: Method: GET
+2025/03/18 21:00:39 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 21:00:39 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 21:00:39 logging_middleware.go:43: -------------------------
+2025/03/18 21:00:39 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 21:00:39 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 21:00:39 logging_middleware.go:72: Status Code: 401
+2025/03/18 21:00:39 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 21:00:39 logging_middleware.go:74: Duration: 196.541µs
+2025/03/18 21:00:39 logging_middleware.go:75: -------------------------
+2025/03/18 22:53:20 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 22:53:20 logging_middleware.go:37: Client IP: ::1
+2025/03/18 22:53:20 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 22:53:20 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 22:53:20 logging_middleware.go:40: Method: GET
+2025/03/18 22:53:20 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 22:53:20 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 22:53:20 logging_middleware.go:43: -------------------------
+2025/03/18 22:53:20 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 22:53:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 22:53:20 logging_middleware.go:72: Status Code: 401
+2025/03/18 22:53:20 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 22:53:20 logging_middleware.go:74: Duration: 1.1185ms
+2025/03/18 22:53:20 logging_middleware.go:75: -------------------------
+2025/03/18 22:53:40 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 22:53:40 logging_middleware.go:37: Client IP: ::1
+2025/03/18 22:53:40 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 22:53:40 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 22:53:40 logging_middleware.go:40: Method: GET
+2025/03/18 22:53:40 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 22:53:40 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 22:53:40 logging_middleware.go:43: -------------------------
+2025/03/18 22:53:40 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 22:53:40 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 22:53:40 logging_middleware.go:72: Status Code: 401
+2025/03/18 22:53:40 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 22:53:40 logging_middleware.go:74: Duration: 276.583µs
+2025/03/18 22:53:40 logging_middleware.go:75: -------------------------
+2025/03/18 22:53:41 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 22:53:41 logging_middleware.go:37: Client IP: ::1
+2025/03/18 22:53:41 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 22:53:41 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 22:53:41 logging_middleware.go:40: Method: GET
+2025/03/18 22:53:41 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 22:53:41 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 22:53:41 logging_middleware.go:43: -------------------------
+2025/03/18 22:53:41 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 22:53:41 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 22:53:41 logging_middleware.go:72: Status Code: 401
+2025/03/18 22:53:41 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 22:53:41 logging_middleware.go:74: Duration: 306.584µs
+2025/03/18 22:53:41 logging_middleware.go:75: -------------------------
+2025/03/18 22:53:44 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 22:53:44 logging_middleware.go:37: Client IP: ::1
+2025/03/18 22:53:44 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 22:53:44 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 22:53:44 logging_middleware.go:40: Method: GET
+2025/03/18 22:53:44 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 22:53:44 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 22:53:44 logging_middleware.go:43: -------------------------
+2025/03/18 22:53:44 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 22:53:44 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 22:53:44 logging_middleware.go:72: Status Code: 401
+2025/03/18 22:53:44 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 22:53:44 logging_middleware.go:74: Duration: 345.5µs
+2025/03/18 22:53:44 logging_middleware.go:75: -------------------------
+2025/03/18 22:53:45 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 22:53:45 logging_middleware.go:37: Client IP: ::1
+2025/03/18 22:53:45 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 22:53:45 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 22:53:45 logging_middleware.go:40: Method: GET
+2025/03/18 22:53:45 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 22:53:45 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 22:53:45 logging_middleware.go:43: -------------------------
+2025/03/18 22:53:45 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 22:53:45 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 22:53:45 logging_middleware.go:72: Status Code: 401
+2025/03/18 22:53:45 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 22:53:45 logging_middleware.go:74: Duration: 280.291µs
+2025/03/18 22:53:45 logging_middleware.go:75: -------------------------
+2025/03/18 22:53:46 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 22:53:46 logging_middleware.go:37: Client IP: ::1
+2025/03/18 22:53:46 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 22:53:46 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 22:53:46 logging_middleware.go:40: Method: GET
+2025/03/18 22:53:46 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 22:53:46 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 22:53:46 logging_middleware.go:43: -------------------------
+2025/03/18 22:53:46 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 22:53:46 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 22:53:46 logging_middleware.go:72: Status Code: 401
+2025/03/18 22:53:46 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 22:53:46 logging_middleware.go:74: Duration: 427.125µs
+2025/03/18 22:53:46 logging_middleware.go:75: -------------------------
+2025/03/18 23:08:20 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/18 23:08:20 logging_middleware.go:37: Client IP: ::1
+2025/03/18 23:08:20 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+2025/03/18 23:08:20 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/18 23:08:20 logging_middleware.go:40: Method: GET
+2025/03/18 23:08:20 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/18 23:08:20 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36]]
+2025/03/18 23:08:20 logging_middleware.go:43: -------------------------
+2025/03/18 23:08:20 auth_middleware.go:22: Unauthorized - missing token
+2025/03/18 23:08:20 logging_middleware.go:71: ---- Response Details ----
+2025/03/18 23:08:20 logging_middleware.go:72: Status Code: 401
+2025/03/18 23:08:20 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}
+2025/03/18 23:08:20 logging_middleware.go:74: Duration: 1.050916ms
+2025/03/18 23:08:20 logging_middleware.go:75: -------------------------
+2025/03/20 10:41:10 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/03/20 10:41:10 main.go:34: Server exiting
+2025/03/20 10:41:10 main.go:58: Graceful shutdown complete.
+2025/03/26 09:58:03 logger.go:22: Logger initialized
+2025/03/26 09:58:24 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 09:58:24 logging_middleware.go:37: Client IP: ::1
+2025/03/26 09:58:24 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 09:58:24 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 09:58:24 logging_middleware.go:40: Method: POST
+2025/03/26 09:58:24 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/03/26 09:58:24 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 09:58:24 logging_middleware.go:43: -------------------------
+2025/03/26 09:58:25 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 09:58:25 logging_middleware.go:72: Status Code: 200
+2025/03/26 09:58:25 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI"}
+2025/03/26 09:58:25 logging_middleware.go:74: Duration: 957.508042ms
+2025/03/26 09:58:25 logging_middleware.go:75: -------------------------
+2025/03/26 09:58:25 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 09:58:25 logging_middleware.go:37: Client IP: ::1
+2025/03/26 09:58:25 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 09:58:25 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 09:58:25 logging_middleware.go:40: Method: GET
+2025/03/26 09:58:25 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 09:58:25 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 09:58:25 logging_middleware.go:43: -------------------------
+2025/03/26 09:58:25 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 09:58:25 logging_middleware.go:72: Status Code: 200
+2025/03/26 09:58:25 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/26 09:58:25 logging_middleware.go:74: Duration: 332.666µs
+2025/03/26 09:58:25 logging_middleware.go:75: -------------------------
+2025/03/26 10:15:31 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 10:15:31 logging_middleware.go:37: Client IP: ::1
+2025/03/26 10:15:31 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 10:15:31 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 10:15:31 logging_middleware.go:40: Method: GET
+2025/03/26 10:15:31 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 10:15:31 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 10:15:31 logging_middleware.go:43: -------------------------
+2025/03/26 10:15:31 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 10:15:31 logging_middleware.go:72: Status Code: 200
+2025/03/26 10:15:31 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/26 10:15:31 logging_middleware.go:74: Duration: 682.959µs
+2025/03/26 10:15:31 logging_middleware.go:75: -------------------------
+2025/03/26 10:20:46 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 10:20:46 logging_middleware.go:37: Client IP: ::1
+2025/03/26 10:20:46 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 10:20:46 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 10:20:46 logging_middleware.go:40: Method: GET
+2025/03/26 10:20:46 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 10:20:46 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 10:20:46 logging_middleware.go:43: -------------------------
+2025/03/26 10:20:46 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 10:20:46 logging_middleware.go:72: Status Code: 200
+2025/03/26 10:20:46 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/26 10:20:46 logging_middleware.go:74: Duration: 524.25µs
+2025/03/26 10:20:46 logging_middleware.go:75: -------------------------
+2025/03/26 10:24:25 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 10:24:25 logging_middleware.go:37: Client IP: ::1
+2025/03/26 10:24:25 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 10:24:25 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 10:24:25 logging_middleware.go:40: Method: GET
+2025/03/26 10:24:25 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 10:24:25 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 10:24:25 logging_middleware.go:43: -------------------------
+2025/03/26 10:24:25 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 10:24:25 logging_middleware.go:72: Status Code: 200
+2025/03/26 10:24:25 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/26 10:24:25 logging_middleware.go:74: Duration: 247.875µs
+2025/03/26 10:24:25 logging_middleware.go:75: -------------------------
+2025/03/26 10:52:46 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 10:52:46 logging_middleware.go:37: Client IP: ::1
+2025/03/26 10:52:46 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 10:52:46 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 10:52:46 logging_middleware.go:40: Method: GET
+2025/03/26 10:52:46 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 10:52:46 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 10:52:46 logging_middleware.go:43: -------------------------
+2025/03/26 10:52:46 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 10:52:46 logging_middleware.go:72: Status Code: 200
+2025/03/26 10:52:46 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/26 10:52:46 logging_middleware.go:74: Duration: 599.75µs
+2025/03/26 10:52:46 logging_middleware.go:75: -------------------------
+2025/03/26 10:57:31 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 10:57:31 logging_middleware.go:37: Client IP: ::1
+2025/03/26 10:57:31 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 10:57:31 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 10:57:31 logging_middleware.go:40: Method: GET
+2025/03/26 10:57:31 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 10:57:31 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMwNjk1MDUsInVzZXJfaWQiOjF9.juNC4FrvvOLgya4hujJ1Vt15F7xRpR2bCY_zJaksLPI] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 10:57:31 logging_middleware.go:43: -------------------------
+2025/03/26 10:57:31 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 10:57:31 logging_middleware.go:72: Status Code: 200
+2025/03/26 10:57:31 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/03/26 10:57:31 logging_middleware.go:74: Duration: 808µs
+2025/03/26 10:57:31 logging_middleware.go:75: -------------------------
+2025/03/26 11:05:35 logging_middleware.go:36: ---- Incoming Request ----
+2025/03/26 11:05:35 logging_middleware.go:37: Client IP: ::1
+2025/03/26 11:05:35 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+2025/03/26 11:05:35 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/03/26 11:05:35 logging_middleware.go:40: Method: GET
+2025/03/26 11:05:35 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/03/26 11:05:35 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36]]
+2025/03/26 11:05:35 logging_middleware.go:43: -------------------------
+2025/03/26 11:05:35 auth_middleware.go:18: Unauthorized - missing token
+2025/03/26 11:05:35 auth_middleware.go:25: Unauthorized - Invalid token
+2025/03/26 11:05:35 logging_middleware.go:71: ---- Response Details ----
+2025/03/26 11:05:35 logging_middleware.go:72: Status Code: 401
+2025/03/26 11:05:35 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}{"error":"Invalid token"}
+2025/03/26 11:05:35 logging_middleware.go:74: Duration: 3.421084ms
+2025/03/26 11:05:35 logging_middleware.go:75: -------------------------
+2025/04/01 14:21:15 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/04/01 14:21:15 main.go:34: Server exiting
+2025/04/01 14:21:15 main.go:58: Graceful shutdown complete.
+2025/04/16 14:52:21 logger.go:22: Logger initialized
+2025/04/27 01:12:48 main.go:24: shutting down gracefully, press Ctrl+C again to force
+2025/04/27 01:12:48 main.go:34: Server exiting
+2025/04/27 01:12:48 main.go:58: Graceful shutdown complete.
+2025/05/15 14:57:59 logger.go:22: Logger initialized
+2025/05/15 14:58:07 logging_middleware.go:36: ---- Incoming Request ----
+2025/05/15 14:58:07 logging_middleware.go:37: Client IP: ::1
+2025/05/15 14:58:07 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+2025/05/15 14:58:07 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/05/15 14:58:07 logging_middleware.go:40: Method: POST
+2025/05/15 14:58:07 logging_middleware.go:41: URL: /api/v1/auth/login
+2025/05/15 14:58:07 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Connection:[keep-alive] Content-Length:[60] Content-Type:[application/json] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36]]
+2025/05/15 14:58:07 logging_middleware.go:43: -------------------------
+2025/05/15 14:58:08 logging_middleware.go:71: ---- Response Details ----
+2025/05/15 14:58:08 logging_middleware.go:72: Status Code: 200
+2025/05/15 14:58:08 logging_middleware.go:73: Response Body: {"message":"Login successful","status":200,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDc0MDM4ODgsInVzZXJfaWQiOjF9.yZcoyNMJ9vn_K0IIwb_SSIwxQOPTRgXRmMyP6xRcYnY"}
+2025/05/15 14:58:08 logging_middleware.go:74: Duration: 948.67375ms
+2025/05/15 14:58:08 logging_middleware.go:75: -------------------------
+2025/05/15 14:58:08 logging_middleware.go:36: ---- Incoming Request ----
+2025/05/15 14:58:08 logging_middleware.go:37: Client IP: ::1
+2025/05/15 14:58:08 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+2025/05/15 14:58:08 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/05/15 14:58:08 logging_middleware.go:40: Method: GET
+2025/05/15 14:58:08 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/05/15 14:58:08 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDc0MDM4ODgsInVzZXJfaWQiOjF9.yZcoyNMJ9vn_K0IIwb_SSIwxQOPTRgXRmMyP6xRcYnY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36]]
+2025/05/15 14:58:08 logging_middleware.go:43: -------------------------
+2025/05/15 14:58:08 logging_middleware.go:71: ---- Response Details ----
+2025/05/15 14:58:08 logging_middleware.go:72: Status Code: 200
+2025/05/15 14:58:08 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/05/15 14:58:08 logging_middleware.go:74: Duration: 453.791µs
+2025/05/15 14:58:08 logging_middleware.go:75: -------------------------
+2025/05/15 15:25:43 logging_middleware.go:36: ---- Incoming Request ----
+2025/05/15 15:25:43 logging_middleware.go:37: Client IP: ::1
+2025/05/15 15:25:43 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+2025/05/15 15:25:43 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/05/15 15:25:43 logging_middleware.go:40: Method: GET
+2025/05/15 15:25:43 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/05/15 15:25:43 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D; auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDc0MDM4ODgsInVzZXJfaWQiOjF9.yZcoyNMJ9vn_K0IIwb_SSIwxQOPTRgXRmMyP6xRcYnY] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36]]
+2025/05/15 15:25:43 logging_middleware.go:43: -------------------------
+2025/05/15 15:25:43 logging_middleware.go:71: ---- Response Details ----
+2025/05/15 15:25:43 logging_middleware.go:72: Status Code: 200
+2025/05/15 15:25:43 logging_middleware.go:73: Response Body: {"created_at":"2025-02-25T18:21:43.573456Z","email":"daviddoherty2016@gmail.com","firstname":"David","surname":"Doherty","updated_at":"2025-02-25T18:21:43.573456Z","username":"daviddavid"}
+2025/05/15 15:25:43 logging_middleware.go:74: Duration: 365.166µs
+2025/05/15 15:25:43 logging_middleware.go:75: -------------------------
+2025/05/16 11:56:14 logging_middleware.go:36: ---- Incoming Request ----
+2025/05/16 11:56:14 logging_middleware.go:37: Client IP: ::1
+2025/05/16 11:56:14 logging_middleware.go:38: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+2025/05/16 11:56:14 logging_middleware.go:39: Referrer: http://localhost:5173/
+2025/05/16 11:56:14 logging_middleware.go:40: Method: GET
+2025/05/16 11:56:14 logging_middleware.go:41: URL: /api/v1/protected/user/data
+2025/05/16 11:56:14 logging_middleware.go:42: Headers: map[Accept:[*/*] Accept-Encoding:[gzip, deflate, br, zstd] Accept-Language:[en-US,en;q=0.9] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__stripe_mid=9394c63b-6e77-4c91-9b67-9aecec4c20b8a0faee; ph_phc_HAxt8aJ7WhoPVAl8wOeTj3fa0hgqCciWh0ytC5qHD8e_posthog=%7B%22distinct_id%22%3A%2201922eb0-0c4d-7293-9227-d6b4731ef92b%22%2C%22%24sesid%22%3A%5B1727363006331%2C%2201922edb-bf7b-748f-8f04-d5f186bcabe5%22%2C1727363006331%5D%7D] Origin:[http://localhost:5173] Referer:[http://localhost:5173/] Sec-Ch-Ua:["Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[empty] Sec-Fetch-Mode:[cors] Sec-Fetch-Site:[same-site] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36]]
+2025/05/16 11:56:14 logging_middleware.go:43: -------------------------
+2025/05/16 11:56:14 auth_middleware.go:18: Unauthorized - missing token
+2025/05/16 11:56:14 auth_middleware.go:25: Unauthorized - Invalid token
+2025/05/16 11:56:14 logging_middleware.go:71: ---- Response Details ----
+2025/05/16 11:56:14 logging_middleware.go:72: Status Code: 401
+2025/05/16 11:56:14 logging_middleware.go:73: Response Body: {"error":"Unauthorized - missing token"}{"error":"Invalid token"}
+2025/05/16 11:56:14 logging_middleware.go:74: Duration: 2.55575ms
+2025/05/16 11:56:14 logging_middleware.go:75: -------------------------

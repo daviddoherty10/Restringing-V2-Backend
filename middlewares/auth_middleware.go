@@ -4,7 +4,6 @@ import (
 	"Restringing-V2/utils"
 	"log"
 	"net/http"
-	"strings"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"
@@ -15,15 +14,9 @@ func AuthMiddleware() gin.HandlerFunc {
 		// Try to get token from cookies
 		tokenString, err := c.Cookie("auth_token")
 		if err != nil {
-			// If no cookie, check the Authorization header as a fallback
-			authHeader := c.GetHeader("Authorization")
-			if authHeader == "" || !strings.HasPrefix(authHeader, "Bearer ") {
-				c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - missing token"})
-				log.Println("Unauthorized - missing token")
-				c.Abort()
-				return
-			}
-			tokenString = strings.TrimPrefix(authHeader, "Bearer ")
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized - missing token"})
+			log.Println("Unauthorized - missing token")
+			c.Abort()
 		}
 
 		token, err := utils.ValidateToken(tokenString)

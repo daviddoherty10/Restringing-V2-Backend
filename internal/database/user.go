@@ -17,7 +17,7 @@ func (s *service) GetUserByUsername(username string) (entity.User, error) {
 	query := `SELECT * FROM users WHERE username = ?`
 	var user entity.User
 
-	// Execute the query
+	// Execute the querymulti
 	row := s.db.QueryRow(query, username)
 
 	// Scan the result into the user struct

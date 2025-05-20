@@ -1,0 +1,14 @@
+Auth:
+    -Add Email verification
+    -Add Password resetting
+    -Add Email changing
+    -Add 2FA
+
+APIs:
+    -Create an application form 
+    -Finish the recommendation form
+
+Other:
+    -Email server
+    -S3 Like Storage
+    -Hosting

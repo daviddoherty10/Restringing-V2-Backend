@@ -39,14 +39,14 @@ func Login(c *gin.Context, db database.Service) {
 
 	user, err := db.GetUserByEmail(credentials.Email)
 	if err != nil {
-		log.Println("Failed to Get User Data on Login: " + err.Error())
-		c.JSON(http.StatusUnauthorized, gin.H{"error": err.Error()})
+		log.Println("Incorrect Email: " + err.Error())
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Incorrect Email: " + err.Error()})
 		return
 	}
 
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(credentials.Password)); err != nil {
-		log.Println("Failed to Compare Hash and Password on Login: " + err.Error())
-		c.JSON(http.StatusUnauthorized, gin.H{"error": "Line 44" + err.Error()})
+		log.Println("Incorrect Password: " + err.Error())
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Incorrect Password: " + err.Error()})
 		return
 	}
 
@@ -133,11 +133,10 @@ func RequestAccountDeletion(c *gin.Context, db database.Service) {
 func Logout(c *gin.Context) {
 	userID, exists := c.Get("user_id")
 	if !exists {
+		log.Println(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
 		return
 	}
-
-	log.Println(userID)
 
 	token, err := utils.GenerateToken(userID.(uint), uint64(1*time.Second))
 	if err != nil {
@@ -149,4 +148,29 @@ func Logout(c *gin.Context) {
 	c.SetCookie("auth_token", token, -1, "/", "", false, false)
 
 	c.JSON(http.StatusOK, gin.H{"message": "Logged out successfully"})
+}
+
+func UpdateEmail(c *gin.Context, db database.Service) {
+	requestEmail, exists := c.Get("email")
+	if !exists {
+		log.Println(http.StatusBadRequest, gin.H{
+			"message": "no email submitted",
+		})
+		c.JSON(http.StatusBadRequest, gin.H{
+			"message": "no email submitted",
+		})
+	}
+
+	log.Println(requestEmail)
+	user, err := db.GetUserByEmail(requestEmail.(string))
+	if err != nil {
+		log.Println(http.StatusBadRequest, gin.H{
+			"error": "unable to get user by email" + err.Error(),
+		})
+		c.JSON(http.StatusBadRequest, gin.H{
+			"error": "unable to get user by email" + err.Error(),
+		})
+	}
+
+	// send email
 }
